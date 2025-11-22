@@ -1,36 +1,92 @@
-# Change these first
-owner: upptime # Your GitHub organization or username, where this repository lives
-repo: upptime # The name of this repository
+# Upptime Configuration for Scribelia
+# Copy this content to .upptimerc.yml in your scribelia-status repo
+
+owner: scribelia
+repo: scribelia-status
 
 sites:
-  - name: Google
-    url: https://www.google.com
-  - name: Wikipedia
-    url: https://en.wikipedia.org
-  - name: Hacker News
-    url: https://news.ycombinator.com
-  - name: Test Broken Site
-    url: https://thissitedoesnotexist.koj.co
-  - name: IPv6 test
-    url: forwardemail.net
-    port: 80
-    check: "tcp-ping"
-    ipv6: true
+  - name: API Production
+    url: https://api.scribelia.com/health
+    expectedStatusCodes:
+      - 200
+    maxResponseTime: 2000
+  
+  - name: Documentation
+    url: https://api.scribelia.com/documentation
+    expectedStatusCodes:
+      - 200
+    maxResponseTime: 3000
 
 status-website:
-  # Add your custom domain name, or remove the `cname` line if you don't have a domain
-  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  cname: demo.upptime.js.org
-  # baseUrl: /your-repo-name
+  cname: status.scribelia.com
+  name: Scribelia Status
   logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Upptime
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
+  introTitle: "**Scribelia** Status"
+  introMessage: État des services en temps réel
   navbar:
     - title: Status
       href: /
     - title: GitHub
-      href: https://github.com/$OWNER/$REPO
+      href: https://github.com/scribelia/scribelia-api
+  theme: dark
 
-# Upptime also supports notifications, assigning issues, and more
-# See https://upptime.js.org/docs/configuration
+# Monitoring configuration
+workflowSchedule:
+  graphs: "0 0 * * *"
+  responseTime: "0 23 * * *"
+  staticSite: "0 1 * * *"
+  summary: "0 0 * * *"
+  updateTemplate: "0 0 * * *"
+  updates: "0 3 * * *"
+  uptime: "*/5 * * * *"
+
+# Notifications (optionnel)
+# assignees:
+#   - anthonyusername
+
+# Commit messages
+commitMessages:
+  readmeContent: ":pencil: Update summary in README [skip ci] [upptime]"
+  summaryJson: ":card_file_box: Update status summary [skip ci] [upptime]"
+  statusChange: "$EMOJI $SITE_NAME is $STATUS ($RESPONSE_CODE in $RESPONSE_TIME ms) [skip ci] [upptime]"
+  graphsUpdate: ":bento: Update graphs [skip ci] [upptime]"
+  commitAuthorName: "Upptime Bot"
+  commitAuthorEmail: "73812536+upptime-bot@users.noreply.github.com"
+
+i18n:
+  activeIncidents: Incidents actifs
+  allSystemsOperational: Tous les systèmes sont opérationnels
+  incidentReport: "Incident #$NUMBER →"
+  activeIncidentSummary: Ouvert le $DATE avec $POSTS mises à jour
+  incidentTitle: Détails de l'incident $NUMBER
+  incidentDetails: Détails de l'incident
+  incidentFixed: Résolu
+  incidentOngoing: En cours
+  incidentOpenedAt: Ouvert le
+  incidentClosedAt: Fermé le
+  incidentSubscribe: S'abonner aux mises à jour
+  incidentViewOnGitHub: Voir sur GitHub
+  incidentCommentSummary: Posté le $DATE par $AUTHOR
+  incidentBack: ← Retour à tous les incidents
+  pastIncidents: Incidents passés
+  pastIncidentsResolved: Résolu en $MINUTES minutes avec $POSTS mises à jour
+  liveStatus: État en direct
+  overallUptime: "Disponibilité: $UPTIME"
+  overallUptimeTitle: Disponibilité globale
+  averageResponseTime: "Temps de réponse moyen: $TIMEms"
+  averageResponseTimeTitle: Temps de réponse moyen
+  sevelDayResponseTime: Temps de réponse (7 jours)
+  responseTimeMs: Temps de réponse (ms)
+  up: ✅ Opérationnel
+  down: ❌ Hors service
+  degraded: ⚠️ Dégradé
+  ms: ms
+  loading: Chargement...
+  navGitHub: GitHub
+  footer: Propulsé par [Upptime](https://upptime.js.org)
+  url: URL
+  status: État
+  history: Historique
+  responseTime: Temps de réponse
+  uptime: Disponibilité
+

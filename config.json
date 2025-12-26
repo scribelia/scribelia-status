@@ -1,0 +1,23 @@
+{
+  "sites": [
+    {
+      "name": "API",
+      "url": "https://api.scribelia.com/health",
+      "expectedStatus": 200,
+      "description": "API Backend"
+    },
+    {
+      "name": "Website",
+      "url": "https://scribelia.com",
+      "expectedStatus": 200,
+      "description": "Frontend Application"
+    }
+  ],
+  "settings": {
+    "title": "Scribelia Status",
+    "description": "État des services Scribelia en temps réel",
+    "cname": "status.scribelia.com",
+    "historyDays": 90
+  }
+}
+

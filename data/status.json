@@ -1,0 +1,63 @@
+{
+  "lastUpdate": "2025-12-26T23:11:10.311Z",
+  "overallStatus": "operational",
+  "sites": {
+    "api": {
+      "name": "API",
+      "url": "https://api.scribelia.com/health",
+      "description": "API Backend",
+      "status": "up",
+      "history": [
+        {
+          "status": "up",
+          "statusCode": 200,
+          "responseTime": 409,
+          "timestamp": "2025-12-26T23:11:09.598Z"
+        }
+      ],
+      "lastCheck": "2025-12-26T23:11:09.598Z",
+      "responseTime": 409,
+      "statusCode": 200,
+      "uptime": {
+        "day": 100,
+        "week": 100,
+        "month": 100,
+        "all": 100
+      },
+      "avgResponseTime": {
+        "day": 409,
+        "week": 409,
+        "month": 409
+      }
+    },
+    "website": {
+      "name": "Website",
+      "url": "https://scribelia.com",
+      "description": "Frontend Application",
+      "status": "up",
+      "history": [
+        {
+          "status": "up",
+          "statusCode": 200,
+          "responseTime": 704,
+          "timestamp": "2025-12-26T23:11:10.311Z"
+        }
+      ],
+      "lastCheck": "2025-12-26T23:11:10.311Z",
+      "responseTime": 704,
+      "statusCode": 200,
+      "uptime": {
+        "day": 100,
+        "week": 100,
+        "month": 100,
+        "all": 100
+      },
+      "avgResponseTime": {
+        "day": 704,
+        "week": 704,
+        "month": 704
+      }
+    }
+  },
+  "incidents": []
+}

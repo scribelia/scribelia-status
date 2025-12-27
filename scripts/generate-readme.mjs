@@ -70,6 +70,8 @@ async function generate() {
   
   let readme = `# ${overallEmoji} ${config.settings.title}
 
+[![Status](https://status.scribelia.com/badge.svg)](https://status.scribelia.com)
+
 > ${config.settings.description}
 
 **Statut actuel:** ${overallEmoji} ${overallText}

@@ -18,6 +18,7 @@ jobs:
     
     permissions:
       contents: write
+      issues: write
       
     steps:
       - name: Checkout
@@ -29,10 +30,19 @@ jobs:
           node-version: '20'
           
       - name: Run status check
+        id: check
         run: node scripts/check.mjs
         
       - name: Generate README
         run: node scripts/generate-readme.mjs
+        
+      - name: Generate Badge
+        run: node scripts/generate-badge.mjs
+        
+      - name: Handle incidents (create/close issues)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: node scripts/handle-incidents.mjs
         
       - name: Commit changes
         run: |

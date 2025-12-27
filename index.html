@@ -260,6 +260,119 @@
       color: var(--accent);
     }
 
+    /* Sparkline */
+    .sparkline-container {
+      margin-top: 1rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border);
+    }
+
+    .sparkline-label {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      margin-bottom: 0.5rem;
+    }
+
+    .sparkline {
+      height: 40px;
+      display: flex;
+      align-items: flex-end;
+      gap: 2px;
+    }
+
+    .sparkline-bar {
+      flex: 1;
+      min-width: 3px;
+      max-width: 8px;
+      background: var(--accent);
+      border-radius: 2px 2px 0 0;
+      transition: all 0.2s ease;
+      opacity: 0.7;
+    }
+
+    .sparkline-bar:hover {
+      opacity: 1;
+      transform: scaleY(1.1);
+    }
+
+    .sparkline-bar.down {
+      background: var(--error);
+    }
+
+    /* Uptime Grid */
+    .uptime-section {
+      margin-top: 2.5rem;
+    }
+
+    .uptime-grid-container {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.5rem;
+    }
+
+    .uptime-grid-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+
+    .uptime-grid-title {
+      font-weight: 600;
+    }
+
+    .uptime-grid-legend {
+      display: flex;
+      gap: 1rem;
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+
+    .legend-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 2px;
+    }
+
+    .legend-dot.up { background: var(--success); }
+    .legend-dot.partial { background: var(--warning); }
+    .legend-dot.down { background: var(--error); }
+    .legend-dot.none { background: var(--border); }
+
+    .uptime-grid {
+      display: flex;
+      gap: 3px;
+      flex-wrap: wrap;
+    }
+
+    .uptime-day {
+      width: 12px;
+      height: 12px;
+      border-radius: 2px;
+      background: var(--border);
+      cursor: pointer;
+      transition: transform 0.1s ease;
+    }
+
+    .uptime-day:hover {
+      transform: scale(1.3);
+    }
+
+    .uptime-day.up { background: var(--success); }
+    .uptime-day.partial { background: var(--warning); }
+    .uptime-day.down { background: var(--error); }
+
+    .uptime-day[title] {
+      position: relative;
+    }
+
     .incidents {
       background: var(--bg-card);
       border: 1px solid var(--border);
@@ -372,7 +485,10 @@
       .service-metrics { width: 100%; justify-content: space-between; }
       .metric { text-align: left; }
       .service-details { width: 100%; }
-      .service-meta { gap: 1rem; }
+      .service-meta { gap: 1rem; flex-direction: column; }
+      .uptime-grid { justify-content: center; }
+      .uptime-grid-header { flex-direction: column; gap: 0.5rem; }
+      .uptime-grid-legend { flex-wrap: wrap; }
     }
   </style>
 </head>
@@ -426,6 +542,88 @@
       if (hours > 0) return `${hours}h ${minutes % 60}m`;
       if (minutes > 0) return `${minutes}m`;
       return `${seconds}s`;
+    }
+
+    function generateSparkline(history) {
+      if (!history || history.length < 2) return '';
+      
+      // Get last 50 data points (roughly 4 hours at 5min intervals)
+      const recent = history.slice(-50);
+      const maxRT = Math.max(...recent.map(h => h.responseTime || 0));
+      
+      if (maxRT === 0) return '';
+      
+      const bars = recent.map(h => {
+        const height = Math.max(4, (h.responseTime / maxRT) * 100);
+        const isDown = h.status !== 'up';
+        return `<div class="sparkline-bar${isDown ? ' down' : ''}" style="height: ${height}%" title="${h.responseTime}ms - ${new Date(h.timestamp).toLocaleTimeString('fr-FR')}"></div>`;
+      }).join('');
+      
+      return `
+        <div class="sparkline-container">
+          <div class="sparkline-label">Temps de réponse (dernières heures)</div>
+          <div class="sparkline">${bars}</div>
+        </div>
+      `;
+    }
+
+    function generateUptimeGrid(sites) {
+      const days = 90;
+      const now = new Date();
+      const grid = [];
+      
+      // Build day-by-day status from all sites' history
+      for (let i = days - 1; i >= 0; i--) {
+        const date = new Date(now);
+        date.setDate(date.getDate() - i);
+        date.setHours(0, 0, 0, 0);
+        const nextDate = new Date(date);
+        nextDate.setDate(nextDate.getDate() + 1);
+        
+        let dayStatus = 'none';
+        let upCount = 0;
+        let totalChecks = 0;
+        
+        for (const site of Object.values(sites)) {
+          if (!site.history) continue;
+          
+          const dayChecks = site.history.filter(h => {
+            const t = new Date(h.timestamp).getTime();
+            return t >= date.getTime() && t < nextDate.getTime();
+          });
+          
+          totalChecks += dayChecks.length;
+          upCount += dayChecks.filter(h => h.status === 'up').length;
+        }
+        
+        if (totalChecks > 0) {
+          const ratio = upCount / totalChecks;
+          if (ratio >= 0.99) dayStatus = 'up';
+          else if (ratio >= 0.9) dayStatus = 'partial';
+          else dayStatus = 'down';
+        }
+        
+        const dateStr = date.toLocaleDateString('fr-FR', { day: 'numeric', month: 'short' });
+        grid.push(`<div class="uptime-day ${dayStatus}" title="${dateStr}"></div>`);
+      }
+      
+      return `
+        <div class="uptime-section">
+          <h2>Historique (90 jours)</h2>
+          <div class="uptime-grid-container">
+            <div class="uptime-grid-header">
+              <span class="uptime-grid-title">Disponibilité quotidienne</span>
+              <div class="uptime-grid-legend">
+                <span class="legend-item"><span class="legend-dot up"></span> 100%</span>
+                <span class="legend-item"><span class="legend-dot partial"></span> >90%</span>
+                <span class="legend-item"><span class="legend-dot down"></span> <90%</span>
+                <span class="legend-item"><span class="legend-dot none"></span> N/A</span>
+              </div>
+            </div>
+            <div class="uptime-grid">${grid.join('')}</div>
+          </div>
+        </div>
+      `;
     }
 
     async function loadStatus() {
@@ -511,6 +709,10 @@
             const uptime = formatDuration(hc.uptime * 1000);
             metaItems.push(`<span class="service-meta-item">Uptime <code>${uptime}</code></span>`);
           }
+          if (hc.deployedAt) {
+            const deployedAgo = formatDuration(Date.now() - new Date(hc.deployedAt).getTime());
+            metaItems.push(`<span class="service-meta-item">Déployé <code>il y a ${deployedAgo}</code></span>`);
+          }
           
           if (metaItems.length > 0) {
             html += `<div class="service-meta">${metaItems.join('')}</div>`;
@@ -519,10 +721,18 @@
           html += `</div>`;
         }
 
+        // Add sparkline if history available
+        if (site.history && site.history.length > 5) {
+          html += generateSparkline(site.history);
+        }
+
         html += `</div>`;
       }
 
       html += `</div>`;
+
+      // Add uptime grid
+      html += generateUptimeGrid(data.sites);
 
       // Incidents section
       if (activeIncidents.length > 0 || recentResolved.length > 0) {

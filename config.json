@@ -19,7 +19,11 @@
     "title": "Scribelia Status",
     "description": "État des services Scribelia en temps réel",
     "cname": "status.scribelia.com",
-    "historyDays": 90
+    "historyDays": 90,
+    "degradedThresholdMs": 2000,
+    "notifications": {
+      "discord": "https://discord.com/api/webhooks/1454405990270242927/KiDcAoA0oN6MSX6l3wB9ZdGCt-0FF0aCKE08MG062w7JIaz5RZZ_dEebqZJgz9tOBV9J"
+    }
   }
 }
 

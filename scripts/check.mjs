@@ -6,6 +6,7 @@
 import fs from 'fs/promises';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { notifyStatusChange } from './notify.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(__dirname, '..');
@@ -16,7 +17,7 @@ const DATA_PATH = path.join(ROOT, 'data', 'status.json');
 /**
  * Check a single endpoint
  */
-async function checkEndpoint(site) {
+async function checkEndpoint(site, degradedThresholdMs = 2000) {
   const start = Date.now();
   
   try {
@@ -32,8 +33,16 @@ async function checkEndpoint(site) {
     clearTimeout(timeout);
     const responseTime = Date.now() - start;
     
+    // Determine status based on response code AND latency
+    let status = 'up';
+    if (response.status !== site.expectedStatus) {
+      status = 'degraded';
+    } else if (responseTime > degradedThresholdMs) {
+      status = 'degraded'; // Slow response = degraded
+    }
+    
     const result = {
-      status: response.status === site.expectedStatus ? 'up' : 'degraded',
+      status,
       statusCode: response.status,
       responseTime,
       timestamp: new Date().toISOString()
@@ -134,6 +143,8 @@ async function monitor() {
   const previousStatuses = {};
   let hasChanges = false;
   
+  const degradedThreshold = config.settings.degradedThresholdMs || 2000;
+
   // Check each site
   for (const site of config.sites) {
     const slug = site.name.toLowerCase().replace(/\s+/g, '-');
@@ -144,7 +155,7 @@ async function monitor() {
       previousStatuses[slug] = data.sites[slug].status;
     }
     
-    const result = await checkEndpoint(site);
+    const result = await checkEndpoint(site, degradedThreshold);
     console.log(`  → ${result.status.toUpperCase()} (${result.statusCode}) - ${result.responseTime}ms\n`);
     
     // Initialize site data if needed
@@ -202,6 +213,9 @@ async function monitor() {
     const prevStatus = previousStatuses[slug];
     if (prevStatus && prevStatus !== result.status) {
       hasChanges = true;
+      
+      // Send Discord notification
+      await notifyStatusChange(site, prevStatus, result.status, result.responseTime);
       
       if (result.status === 'down' || result.status === 'degraded') {
         // New incident

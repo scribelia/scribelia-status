@@ -31,14 +31,46 @@ async function checkEndpoint(site) {
     
     clearTimeout(timeout);
     const responseTime = Date.now() - start;
-    const status = response.status === site.expectedStatus ? 'up' : 'degraded';
     
-    return {
-      status,
+    const result = {
+      status: response.status === site.expectedStatus ? 'up' : 'degraded',
       statusCode: response.status,
       responseTime,
       timestamp: new Date().toISOString()
     };
+    
+    // Parse health check response for detailed info
+    if (site.type === 'health-check' && response.ok) {
+      try {
+        const healthData = await response.json();
+        result.healthCheck = {
+          version: healthData.version || null,
+          environment: healthData.environment || null,
+          uptime: healthData.uptime || null,
+          deployedAt: healthData.deployedAt || null,
+          checks: {}
+        };
+        
+        // Parse sub-checks (database, redis, etc.)
+        if (healthData.checks) {
+          for (const [name, check] of Object.entries(healthData.checks)) {
+            result.healthCheck.checks[name] = {
+              status: check.status === 'ok' ? 'up' : 'down',
+              latency: check.latency || null
+            };
+            
+            // If any sub-check is down, mark as degraded
+            if (check.status !== 'ok') {
+              result.status = 'degraded';
+            }
+          }
+        }
+      } catch {
+        // Ignore JSON parse errors, keep basic status
+      }
+    }
+    
+    return result;
   } catch (error) {
     return {
       status: 'down',
@@ -131,6 +163,11 @@ async function monitor() {
     data.sites[slug].lastCheck = result.timestamp;
     data.sites[slug].responseTime = result.responseTime;
     data.sites[slug].statusCode = result.statusCode;
+    
+    // Store health check details if available
+    if (result.healthCheck) {
+      data.sites[slug].healthCheck = result.healthCheck;
+    }
     
     // Add to history
     data.sites[slug].history.push({

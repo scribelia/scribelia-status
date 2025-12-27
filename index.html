@@ -133,6 +133,7 @@
       border-radius: 12px;
       padding: 1.25rem 1.5rem;
       display: flex;
+      flex-wrap: wrap;
       align-items: center;
       justify-content: space-between;
       transition: all 0.2s ease;
@@ -191,6 +192,72 @@
     .metric-label {
       font-size: 0.8rem;
       color: var(--text-muted);
+    }
+
+    .service-details {
+      width: 100%;
+      margin-top: 1rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border);
+    }
+
+    .sub-services {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .sub-service {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.4rem 0.75rem;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      font-size: 0.85rem;
+    }
+
+    .sub-service-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+    }
+
+    .sub-service-dot.up { background: var(--success); }
+    .sub-service-dot.down { background: var(--error); }
+
+    .sub-service-name {
+      font-weight: 500;
+    }
+
+    .sub-service-latency {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+
+    .service-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .service-meta-item {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .service-meta-item code {
+      font-family: 'JetBrains Mono', monospace;
+      background: rgba(139, 92, 246, 0.1);
+      padding: 0.1rem 0.4rem;
+      border-radius: 4px;
+      color: var(--accent);
     }
 
     .incidents {
@@ -304,6 +371,8 @@
       .service-card { flex-direction: column; align-items: flex-start; gap: 1rem; }
       .service-metrics { width: 100%; justify-content: space-between; }
       .metric { text-align: left; }
+      .service-details { width: 100%; }
+      .service-meta { gap: 1rem; }
     }
   </style>
 </head>
@@ -389,6 +458,8 @@
       `;
 
       for (const [slug, site] of sites) {
+        const hc = site.healthCheck;
+        
         html += `
           <div class="service-card">
             <div class="service-info">
@@ -412,8 +483,42 @@
                 <span class="metric-label">7j</span>
               </div>
             </div>
-          </div>
         `;
+
+        // Add health check details if available
+        if (hc && hc.checks && Object.keys(hc.checks).length > 0) {
+          html += `<div class="service-details"><div class="sub-services">`;
+          
+          for (const [name, check] of Object.entries(hc.checks)) {
+            const latency = check.latency !== null ? `${check.latency}ms` : '';
+            html += `
+              <div class="sub-service">
+                <div class="sub-service-dot ${check.status}"></div>
+                <span class="sub-service-name">${name.charAt(0).toUpperCase() + name.slice(1)}</span>
+                ${latency ? `<span class="sub-service-latency">${latency}</span>` : ''}
+              </div>
+            `;
+          }
+          
+          html += `</div>`;
+          
+          // Add version/env info
+          const metaItems = [];
+          if (hc.version) metaItems.push(`<span class="service-meta-item">Version <code>${hc.version}</code></span>`);
+          if (hc.environment) metaItems.push(`<span class="service-meta-item">Env <code>${hc.environment}</code></span>`);
+          if (hc.uptime) {
+            const uptime = formatDuration(hc.uptime * 1000);
+            metaItems.push(`<span class="service-meta-item">Uptime <code>${uptime}</code></span>`);
+          }
+          
+          if (metaItems.length > 0) {
+            html += `<div class="service-meta">${metaItems.join('')}</div>`;
+          }
+          
+          html += `</div>`;
+        }
+
+        html += `</div>`;
       }
 
       html += `</div>`;

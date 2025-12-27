@@ -4,13 +4,15 @@
       "name": "API",
       "url": "https://api.scribelia.com/health",
       "expectedStatus": 200,
-      "description": "API Backend"
+      "description": "API Backend",
+      "type": "health-check"
     },
     {
       "name": "Website",
       "url": "https://scribelia.com",
       "expectedStatus": 200,
-      "description": "Frontend Application"
+      "description": "Frontend Application",
+      "type": "http"
     }
   ],
   "settings": {

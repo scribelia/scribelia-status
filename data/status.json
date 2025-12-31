@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2025-12-31T11:20:28.265Z",
+  "lastUpdate": "2025-12-31T11:32:33.358Z",
   "overallStatus": "operational",
   "sites": {
     "api": {
@@ -3367,16 +3367,22 @@
           "statusCode": 200,
           "responseTime": 522,
           "timestamp": "2025-12-31T11:20:27.359Z"
+        },
+        {
+          "status": "up",
+          "statusCode": 200,
+          "responseTime": 686,
+          "timestamp": "2025-12-31T11:32:32.515Z"
         }
       ],
-      "lastCheck": "2025-12-31T11:20:27.359Z",
-      "responseTime": 522,
+      "lastCheck": "2025-12-31T11:32:32.515Z",
+      "responseTime": 686,
       "statusCode": 200,
       "uptime": {
         "day": 73.98,
-        "week": 81.25,
-        "month": 81.25,
-        "all": 81.25
+        "week": 81.28,
+        "month": 81.28,
+        "all": 81.28
       },
       "avgResponseTime": {
         "day": 624,
@@ -3386,12 +3392,12 @@
       "healthCheck": {
         "version": "1.0.0",
         "environment": "production",
-        "uptime": 207.493177991,
+        "uptime": 932.64759369,
         "deployedAt": "2025-12-31T11:17:02.423Z",
         "checks": {
           "database": {
             "status": "up",
-            "latency": 173
+            "latency": 163
           },
           "redis": {
             "status": "up",
@@ -6765,10 +6771,16 @@
           "statusCode": 200,
           "responseTime": 743,
           "timestamp": "2025-12-31T11:20:28.260Z"
+        },
+        {
+          "status": "up",
+          "statusCode": 200,
+          "responseTime": 833,
+          "timestamp": "2025-12-31T11:32:33.355Z"
         }
       ],
-      "lastCheck": "2025-12-31T11:20:28.260Z",
-      "responseTime": 743,
+      "lastCheck": "2025-12-31T11:32:33.355Z",
+      "responseTime": 833,
       "statusCode": 200,
       "uptime": {
         "day": 100,
@@ -6778,8 +6790,8 @@
       },
       "avgResponseTime": {
         "day": 625,
-        "week": 621,
-        "month": 621
+        "week": 622,
+        "month": 622
       }
     }
   },

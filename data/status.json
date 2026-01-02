@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-01-02T22:23:00.175Z",
+  "lastUpdate": "2026-01-02T22:36:08.353Z",
   "overallStatus": "operational",
   "sites": {
     "api": {
@@ -5347,16 +5347,22 @@
           "statusCode": 200,
           "responseTime": 475,
           "timestamp": "2026-01-02T22:22:59.801Z"
+        },
+        {
+          "status": "up",
+          "statusCode": 200,
+          "responseTime": 716,
+          "timestamp": "2026-01-02T22:36:07.402Z"
         }
       ],
-      "lastCheck": "2026-01-02T22:22:59.801Z",
-      "responseTime": 475,
+      "lastCheck": "2026-01-02T22:36:07.402Z",
+      "responseTime": 716,
       "statusCode": 200,
       "uptime": {
         "day": 78.63,
-        "week": 80.67,
-        "month": 80.67,
-        "all": 80.67
+        "week": 80.7,
+        "month": 80.7,
+        "all": 80.7
       },
       "avgResponseTime": {
         "day": 641,
@@ -5366,16 +5372,16 @@
       "healthCheck": {
         "version": "1.0.0",
         "environment": "production",
-        "uptime": 604.278529951,
+        "uptime": 1391.766583155,
         "deployedAt": "2026-01-02T22:12:58.236Z",
         "checks": {
           "database": {
             "status": "up",
-            "latency": 162
+            "latency": 253
           },
           "redis": {
             "status": "up",
-            "latency": 1
+            "latency": null
           }
         }
       }
@@ -10725,10 +10731,16 @@
           "statusCode": 200,
           "responseTime": 214,
           "timestamp": "2026-01-02T22:23:00.172Z"
+        },
+        {
+          "status": "up",
+          "statusCode": 200,
+          "responseTime": 939,
+          "timestamp": "2026-01-02T22:36:08.349Z"
         }
       ],
-      "lastCheck": "2026-01-02T22:23:00.172Z",
-      "responseTime": 214,
+      "lastCheck": "2026-01-02T22:36:08.349Z",
+      "responseTime": 939,
       "statusCode": 200,
       "uptime": {
         "day": 100,
@@ -10737,7 +10749,7 @@
         "all": 99.78
       },
       "avgResponseTime": {
-        "day": 589,
+        "day": 591,
         "week": 613,
         "month": 613
       }

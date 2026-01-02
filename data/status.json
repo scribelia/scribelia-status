@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-01-02T23:45:24.233Z",
+  "lastUpdate": "2026-01-02T23:52:09.425Z",
   "overallStatus": "operational",
   "sites": {
     "api": {
@@ -5407,16 +5407,22 @@
           "statusCode": 200,
           "responseTime": 573,
           "timestamp": "2026-01-02T23:45:23.980Z"
+        },
+        {
+          "status": "up",
+          "statusCode": 200,
+          "responseTime": 582,
+          "timestamp": "2026-01-02T23:52:08.766Z"
         }
       ],
-      "lastCheck": "2026-01-02T23:45:23.980Z",
-      "responseTime": 573,
+      "lastCheck": "2026-01-02T23:52:08.766Z",
+      "responseTime": 582,
       "statusCode": 200,
       "uptime": {
-        "day": 77.86,
+        "day": 77.69,
         "week": 80.6,
-        "month": 80.67,
-        "all": 80.67
+        "month": 80.69,
+        "all": 80.69
       },
       "avgResponseTime": {
         "day": 635,
@@ -5426,16 +5432,16 @@
       "healthCheck": {
         "version": "1.0.0",
         "environment": "production",
-        "uptime": 723.815013839,
+        "uptime": 1128.619882052,
         "deployedAt": "2026-01-02T23:33:22.183Z",
         "checks": {
           "database": {
             "status": "up",
-            "latency": 145
+            "latency": 126
           },
           "redis": {
             "status": "up",
-            "latency": 1
+            "latency": null
           }
         }
       }
@@ -10845,10 +10851,16 @@
           "statusCode": 200,
           "responseTime": 239,
           "timestamp": "2026-01-02T23:45:24.229Z"
+        },
+        {
+          "status": "up",
+          "statusCode": 200,
+          "responseTime": 645,
+          "timestamp": "2026-01-02T23:52:09.422Z"
         }
       ],
-      "lastCheck": "2026-01-02T23:45:24.229Z",
-      "responseTime": 239,
+      "lastCheck": "2026-01-02T23:52:09.422Z",
+      "responseTime": 645,
       "statusCode": 200,
       "uptime": {
         "day": 100,
@@ -10857,7 +10869,7 @@
         "all": 99.78
       },
       "avgResponseTime": {
-        "day": 605,
+        "day": 606,
         "week": 614,
         "month": 615
       }

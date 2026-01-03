@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-01-03T13:50:33.191Z",
+  "lastUpdate": "2026-01-03T13:51:39.157Z",
   "overallStatus": "operational",
   "sites": {
     "api": {
@@ -5815,16 +5815,22 @@
           "statusCode": 200,
           "responseTime": 611,
           "timestamp": "2026-01-03T13:50:32.521Z"
+        },
+        {
+          "status": "up",
+          "statusCode": 200,
+          "responseTime": 700,
+          "timestamp": "2026-01-03T13:51:39.012Z"
         }
       ],
-      "lastCheck": "2026-01-03T13:50:32.521Z",
-      "responseTime": 611,
+      "lastCheck": "2026-01-03T13:51:39.012Z",
+      "responseTime": 700,
       "statusCode": 200,
       "uptime": {
-        "day": 78.26,
-        "week": 79.23,
-        "month": 80.06,
-        "all": 80.06
+        "day": 78.42,
+        "week": 79.25,
+        "month": 80.08,
+        "all": 80.08
       },
       "avgResponseTime": {
         "day": 631,
@@ -5834,12 +5840,12 @@
       "healthCheck": {
         "version": "1.0.0",
         "environment": "production",
-        "uptime": 758.297415919,
+        "uptime": 824.834742062,
         "deployedAt": "2026-01-03T13:37:55.958Z",
         "checks": {
           "database": {
             "status": "up",
-            "latency": 175
+            "latency": 132
           },
           "redis": {
             "status": "up",
@@ -11661,10 +11667,16 @@
           "statusCode": 200,
           "responseTime": 657,
           "timestamp": "2026-01-03T13:50:33.187Z"
+        },
+        {
+          "status": "up",
+          "statusCode": 200,
+          "responseTime": 128,
+          "timestamp": "2026-01-03T13:51:39.151Z"
         }
       ],
-      "lastCheck": "2026-01-03T13:50:33.187Z",
-      "responseTime": 657,
+      "lastCheck": "2026-01-03T13:51:39.151Z",
+      "responseTime": 128,
       "statusCode": 200,
       "uptime": {
         "day": 100,
@@ -11673,9 +11685,9 @@
         "all": 99.79
       },
       "avgResponseTime": {
-        "day": 613,
+        "day": 610,
         "week": 607,
-        "month": 610
+        "month": 609
       }
     }
   },

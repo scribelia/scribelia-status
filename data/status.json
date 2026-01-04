@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-01-04T08:38:14.834Z",
+  "lastUpdate": "2026-01-04T08:52:18.482Z",
   "overallStatus": "operational",
   "sites": {
     "api": {
@@ -6445,31 +6445,37 @@
           "statusCode": 200,
           "responseTime": 544,
           "timestamp": "2026-01-04T08:38:13.393Z"
+        },
+        {
+          "status": "up",
+          "statusCode": 200,
+          "responseTime": 529,
+          "timestamp": "2026-01-04T08:52:18.255Z"
         }
       ],
-      "lastCheck": "2026-01-04T08:38:13.393Z",
-      "responseTime": 544,
+      "lastCheck": "2026-01-04T08:52:18.255Z",
+      "responseTime": 529,
       "statusCode": 200,
       "uptime": {
-        "day": 82.61,
-        "week": 79.74,
-        "month": 80.52,
-        "all": 80.52
+        "day": 83.21,
+        "week": 79.71,
+        "month": 80.54,
+        "all": 80.54
       },
       "avgResponseTime": {
-        "day": 627,
+        "day": 625,
         "week": 626,
-        "month": 708
+        "month": 707
       },
       "healthCheck": {
         "version": "1.0.0",
         "environment": "production",
-        "uptime": 291.000776739,
+        "uptime": 1135.905227171,
         "deployedAt": "2026-01-04T08:33:25.369Z",
         "checks": {
           "database": {
             "status": "up",
-            "latency": 168
+            "latency": 161
           },
           "redis": {
             "status": "up",
@@ -12921,10 +12927,16 @@
           "statusCode": 200,
           "responseTime": 919,
           "timestamp": "2026-01-04T08:38:14.829Z"
+        },
+        {
+          "status": "up",
+          "statusCode": 200,
+          "responseTime": 208,
+          "timestamp": "2026-01-04T08:52:18.477Z"
         }
       ],
-      "lastCheck": "2026-01-04T08:38:14.829Z",
-      "responseTime": 919,
+      "lastCheck": "2026-01-04T08:52:18.477Z",
+      "responseTime": 208,
       "statusCode": 200,
       "uptime": {
         "day": 100,
@@ -12933,8 +12945,8 @@
         "all": 99.81
       },
       "avgResponseTime": {
-        "day": 563,
-        "week": 604,
+        "day": 558,
+        "week": 602,
         "month": 606
       }
     }

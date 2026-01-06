@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-01-06T20:49:17.502Z",
+  "lastUpdate": "2026-01-06T20:52:08.531Z",
   "overallStatus": "operational",
   "sites": {
     "api": {
@@ -8275,16 +8275,22 @@
           "statusCode": 200,
           "responseTime": 714,
           "timestamp": "2026-01-06T20:49:17.231Z"
+        },
+        {
+          "status": "up",
+          "statusCode": 200,
+          "responseTime": 619,
+          "timestamp": "2026-01-06T20:52:07.884Z"
         }
       ],
-      "lastCheck": "2026-01-06T20:49:17.231Z",
-      "responseTime": 714,
+      "lastCheck": "2026-01-06T20:52:07.884Z",
+      "responseTime": 619,
       "statusCode": 200,
       "uptime": {
         "day": 73.04,
-        "week": 79.03,
-        "month": 80.19,
-        "all": 80.19
+        "week": 79.05,
+        "month": 80.2,
+        "all": 80.2
       },
       "avgResponseTime": {
         "day": 618,
@@ -8294,12 +8300,12 @@
       "healthCheck": {
         "version": "1.0.0",
         "environment": "production",
-        "uptime": 770.046850269,
+        "uptime": 940.735714898,
         "deployedAt": "2026-01-06T20:36:29.703Z",
         "checks": {
           "database": {
             "status": "up",
-            "latency": 241
+            "latency": 168
           },
           "redis": {
             "status": "up",
@@ -16581,10 +16587,16 @@
           "statusCode": 200,
           "responseTime": 251,
           "timestamp": "2026-01-06T20:49:17.496Z"
+        },
+        {
+          "status": "up",
+          "statusCode": 200,
+          "responseTime": 625,
+          "timestamp": "2026-01-06T20:52:08.520Z"
         }
       ],
-      "lastCheck": "2026-01-06T20:49:17.496Z",
-      "responseTime": 251,
+      "lastCheck": "2026-01-06T20:52:08.520Z",
+      "responseTime": 625,
       "statusCode": 200,
       "uptime": {
         "day": 100,
@@ -16593,7 +16605,7 @@
         "all": 99.85
       },
       "avgResponseTime": {
-        "day": 578,
+        "day": 582,
         "week": 593,
         "month": 600
       }

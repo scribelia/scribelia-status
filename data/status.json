@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-01-10T19:17:46.249Z",
+  "lastUpdate": "2026-01-10T19:28:56.277Z",
   "overallStatus": "operational",
   "sites": {
     "api": {
@@ -11041,16 +11041,22 @@
           "statusCode": 200,
           "responseTime": 580,
           "timestamp": "2026-01-10T19:17:45.561Z"
+        },
+        {
+          "status": "up",
+          "statusCode": 200,
+          "responseTime": 687,
+          "timestamp": "2026-01-10T19:28:55.577Z"
         }
       ],
-      "lastCheck": "2026-01-10T19:17:45.561Z",
-      "responseTime": 580,
+      "lastCheck": "2026-01-10T19:28:55.577Z",
+      "responseTime": 687,
       "statusCode": 200,
       "uptime": {
         "day": 80.85,
         "week": 76.2,
-        "month": 78.47,
-        "all": 78.47
+        "month": 78.48,
+        "all": 78.48
       },
       "avgResponseTime": {
         "day": 638,
@@ -11060,12 +11066,12 @@
       "healthCheck": {
         "version": "1.0.0",
         "environment": "production",
-        "uptime": 47.337269765,
+        "uptime": 717.361997203,
         "deployedAt": "2026-01-10T19:17:01.991Z",
         "checks": {
           "database": {
             "status": "up",
-            "latency": 178
+            "latency": 177
           },
           "redis": {
             "status": "up",
@@ -22113,10 +22119,16 @@
           "statusCode": 200,
           "responseTime": 343,
           "timestamp": "2026-01-10T19:17:46.242Z"
+        },
+        {
+          "status": "up",
+          "statusCode": 200,
+          "responseTime": 681,
+          "timestamp": "2026-01-10T19:28:56.271Z"
         }
       ],
-      "lastCheck": "2026-01-10T19:17:46.242Z",
-      "responseTime": 343,
+      "lastCheck": "2026-01-10T19:28:56.271Z",
+      "responseTime": 681,
       "statusCode": 200,
       "uptime": {
         "day": 100,
@@ -22125,9 +22137,9 @@
         "all": 99.89
       },
       "avgResponseTime": {
-        "day": 608,
+        "day": 612,
         "week": 596,
-        "month": 603
+        "month": 604
       }
     }
   },

@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-01-11T22:22:12.068Z",
+  "lastUpdate": "2026-01-11T22:39:26.826Z",
   "overallStatus": "operational",
   "sites": {
     "api": {
@@ -12013,16 +12013,22 @@
           "statusCode": 200,
           "responseTime": 766,
           "timestamp": "2026-01-11T22:22:11.133Z"
+        },
+        {
+          "status": "up",
+          "statusCode": 200,
+          "responseTime": 767,
+          "timestamp": "2026-01-11T22:39:25.924Z"
         }
       ],
-      "lastCheck": "2026-01-11T22:22:11.133Z",
-      "responseTime": 766,
+      "lastCheck": "2026-01-11T22:39:25.924Z",
+      "responseTime": 767,
       "statusCode": 200,
       "uptime": {
-        "day": 78.83,
+        "day": 78.68,
         "week": 75.12,
-        "month": 78.66,
-        "all": 78.66
+        "month": 78.67,
+        "all": 78.67
       },
       "avgResponseTime": {
         "day": 621,
@@ -12032,12 +12038,12 @@
       "healthCheck": {
         "version": "1.0.0",
         "environment": "production",
-        "uptime": 289.412258836,
+        "uptime": 1324.210970763,
         "deployedAt": "2026-01-11T22:17:25.290Z",
         "checks": {
           "database": {
             "status": "up",
-            "latency": 194
+            "latency": 179
           },
           "redis": {
             "status": "up",
@@ -24057,10 +24063,16 @@
           "statusCode": 200,
           "responseTime": 694,
           "timestamp": "2026-01-11T22:22:12.057Z"
+        },
+        {
+          "status": "up",
+          "statusCode": 200,
+          "responseTime": 880,
+          "timestamp": "2026-01-11T22:39:26.817Z"
         }
       ],
-      "lastCheck": "2026-01-11T22:22:12.057Z",
-      "responseTime": 694,
+      "lastCheck": "2026-01-11T22:39:26.817Z",
+      "responseTime": 880,
       "statusCode": 200,
       "uptime": {
         "day": 100,
@@ -24069,9 +24081,9 @@
         "all": 99.9
       },
       "avgResponseTime": {
-        "day": 582,
+        "day": 584,
         "week": 597,
-        "month": 601
+        "month": 602
       }
     }
   },

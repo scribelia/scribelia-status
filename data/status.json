@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-01-12T09:42:37.494Z",
+  "lastUpdate": "2026-01-12T09:57:35.500Z",
   "overallStatus": "operational",
   "sites": {
     "api": {
@@ -12259,35 +12259,41 @@
           "statusCode": 200,
           "responseTime": 680,
           "timestamp": "2026-01-12T09:42:36.847Z"
+        },
+        {
+          "status": "up",
+          "statusCode": 200,
+          "responseTime": 730,
+          "timestamp": "2026-01-12T09:57:35.061Z"
         }
       ],
-      "lastCheck": "2026-01-12T09:42:36.847Z",
-      "responseTime": 680,
+      "lastCheck": "2026-01-12T09:57:35.061Z",
+      "responseTime": 730,
       "statusCode": 200,
       "uptime": {
-        "day": 79.23,
-        "week": 75.33,
-        "month": 78.5,
-        "all": 78.5
+        "day": 78.91,
+        "week": 75.36,
+        "month": 78.51,
+        "all": 78.51
       },
       "avgResponseTime": {
-        "day": 624,
+        "day": 627,
         "week": 623,
         "month": 667
       },
       "healthCheck": {
         "version": "1.0.0",
         "environment": "production",
-        "uptime": 243.460266939,
+        "uptime": 1141.650349788,
         "deployedAt": "2026-01-12T09:38:36.552Z",
         "checks": {
           "database": {
             "status": "up",
-            "latency": 166
+            "latency": 185
           },
           "redis": {
             "status": "up",
-            "latency": 1
+            "latency": null
           }
         }
       }
@@ -24549,13 +24555,19 @@
           "statusCode": 200,
           "responseTime": 281,
           "timestamp": "2026-01-12T09:42:37.485Z"
+        },
+        {
+          "status": "up",
+          "statusCode": 200,
+          "responseTime": 416,
+          "timestamp": "2026-01-12T09:57:35.492Z"
         }
       ],
-      "lastCheck": "2026-01-12T09:42:37.485Z",
-      "responseTime": 281,
+      "lastCheck": "2026-01-12T09:57:35.492Z",
+      "responseTime": 416,
       "statusCode": 200,
       "uptime": {
-        "day": 97.69,
+        "day": 97.66,
         "week": 99.64,
         "month": 99.76,
         "all": 99.76

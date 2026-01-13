@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-01-13T07:58:24.908Z",
+  "lastUpdate": "2026-01-13T07:59:04.869Z",
   "overallStatus": "operational",
   "sites": {
     "api": {
@@ -12877,31 +12877,37 @@
           "statusCode": 200,
           "responseTime": 567,
           "timestamp": "2026-01-13T07:58:24.776Z"
+        },
+        {
+          "status": "up",
+          "statusCode": 200,
+          "responseTime": 749,
+          "timestamp": "2026-01-13T07:59:04.495Z"
         }
       ],
-      "lastCheck": "2026-01-13T07:58:24.776Z",
-      "responseTime": 567,
+      "lastCheck": "2026-01-13T07:59:04.495Z",
+      "responseTime": 749,
       "statusCode": 200,
       "uptime": {
-        "day": 68.18,
-        "week": 74.4,
-        "month": 78.09,
-        "all": 78.09
+        "day": 68.47,
+        "week": 74.43,
+        "month": 78.1,
+        "all": 78.1
       },
       "avgResponseTime": {
-        "day": 667,
+        "day": 668,
         "week": 630,
         "month": 667
       },
       "healthCheck": {
         "version": "1.0.0",
         "environment": "production",
-        "uptime": 1470.758758335,
+        "uptime": 1510.503560315,
         "deployedAt": "2026-01-13T07:33:57.579Z",
         "checks": {
           "database": {
             "status": "up",
-            "latency": 163
+            "latency": 117
           },
           "redis": {
             "status": "up",
@@ -25785,13 +25791,19 @@
           "statusCode": 200,
           "responseTime": 102,
           "timestamp": "2026-01-13T07:58:24.891Z"
+        },
+        {
+          "status": "up",
+          "statusCode": 200,
+          "responseTime": 351,
+          "timestamp": "2026-01-13T07:59:04.861Z"
         }
       ],
-      "lastCheck": "2026-01-13T07:58:24.891Z",
-      "responseTime": 102,
+      "lastCheck": "2026-01-13T07:59:04.861Z",
+      "responseTime": 351,
       "statusCode": 200,
       "uptime": {
-        "day": 99.09,
+        "day": 99.1,
         "week": 99.64,
         "month": 99.77,
         "all": 99.77

@@ -1,12 +1,12 @@
 {
-  "lastUpdate": "2026-01-14T08:17:45.314Z",
-  "overallStatus": "degraded",
+  "lastUpdate": "2026-01-14T08:24:42.939Z",
+  "overallStatus": "operational",
   "sites": {
     "api": {
       "name": "API",
       "url": "https://api.scribelia.com/health",
       "description": "API Backend",
-      "status": "degraded",
+      "status": "up",
       "history": [
         {
           "status": "up",
@@ -13537,35 +13537,41 @@
           "statusCode": 200,
           "responseTime": 7792,
           "timestamp": "2026-01-14T08:17:44.461Z"
+        },
+        {
+          "status": "up",
+          "statusCode": 200,
+          "responseTime": 752,
+          "timestamp": "2026-01-14T08:24:42.297Z"
         }
       ],
-      "lastCheck": "2026-01-14T08:17:44.461Z",
-      "responseTime": 7792,
+      "lastCheck": "2026-01-14T08:24:42.297Z",
+      "responseTime": 752,
       "statusCode": 200,
       "uptime": {
-        "day": 68.81,
-        "week": 73.73,
-        "month": 77.65,
-        "all": 77.65
+        "day": 69.72,
+        "week": 73.82,
+        "month": 77.66,
+        "all": 77.66
       },
       "avgResponseTime": {
-        "day": 675,
+        "day": 676,
         "week": 637,
         "month": 667
       },
       "healthCheck": {
         "version": "1.0.0",
         "environment": "production",
-        "uptime": 6.070522158,
+        "uptime": 424.143975707,
         "deployedAt": "2026-01-14T08:17:41.334Z",
         "checks": {
           "database": {
             "status": "up",
-            "latency": 414
+            "latency": 185
           },
           "redis": {
             "status": "up",
-            "latency": 1
+            "latency": null
           }
         }
       }
@@ -27105,10 +27111,16 @@
           "statusCode": 200,
           "responseTime": 278,
           "timestamp": "2026-01-14T08:17:45.302Z"
+        },
+        {
+          "status": "up",
+          "statusCode": 200,
+          "responseTime": 321,
+          "timestamp": "2026-01-14T08:24:42.931Z"
         }
       ],
-      "lastCheck": "2026-01-14T08:17:45.302Z",
-      "responseTime": 278,
+      "lastCheck": "2026-01-14T08:24:42.931Z",
+      "responseTime": 321,
       "statusCode": 200,
       "uptime": {
         "day": 100,
@@ -27117,8 +27129,8 @@
         "all": 99.78
       },
       "avgResponseTime": {
-        "day": 292,
-        "week": 511,
+        "day": 293,
+        "week": 510,
         "month": 569
       }
     }
@@ -27130,12 +27142,17 @@
       "slug": "api",
       "status": "degraded",
       "startedAt": "2026-01-14T08:17:44.461Z",
-      "resolvedAt": null,
+      "resolvedAt": "2026-01-14T08:24:42.297Z",
       "updates": [
         {
           "status": "degraded",
           "message": "API is degraded",
           "timestamp": "2026-01-14T08:17:44.461Z"
+        },
+        {
+          "status": "resolved",
+          "message": "API is back up",
+          "timestamp": "2026-01-14T08:24:42.297Z"
         }
       ]
     },

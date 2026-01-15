@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-01-15T05:44:38.170Z",
+  "lastUpdate": "2026-01-15T05:56:02.715Z",
   "overallStatus": "operational",
   "sites": {
     "api": {
@@ -14107,16 +14107,22 @@
           "statusCode": 200,
           "responseTime": 820,
           "timestamp": "2026-01-15T05:44:37.271Z"
+        },
+        {
+          "status": "up",
+          "statusCode": 200,
+          "responseTime": 650,
+          "timestamp": "2026-01-15T05:56:02.421Z"
         }
       ],
-      "lastCheck": "2026-01-15T05:44:37.271Z",
-      "responseTime": 820,
+      "lastCheck": "2026-01-15T05:56:02.421Z",
+      "responseTime": 650,
       "statusCode": 200,
       "uptime": {
-        "day": 76.36,
-        "week": 74.4,
-        "month": 77.57,
-        "all": 77.57
+        "day": 76.15,
+        "week": 74.49,
+        "month": 77.58,
+        "all": 77.58
       },
       "avgResponseTime": {
         "day": 665,
@@ -14126,12 +14132,12 @@
       "healthCheck": {
         "version": "1.0.0",
         "environment": "production",
-        "uptime": 24.178957191,
+        "uptime": 709.415752617,
         "deployedAt": "2026-01-15T05:44:16.169Z",
         "checks": {
           "database": {
             "status": "up",
-            "latency": 241
+            "latency": 171
           },
           "redis": {
             "status": "up",
@@ -28245,10 +28251,16 @@
           "statusCode": 200,
           "responseTime": 332,
           "timestamp": "2026-01-15T05:44:38.160Z"
+        },
+        {
+          "status": "up",
+          "statusCode": 200,
+          "responseTime": 261,
+          "timestamp": "2026-01-15T05:56:02.706Z"
         }
       ],
-      "lastCheck": "2026-01-15T05:44:38.160Z",
-      "responseTime": 332,
+      "lastCheck": "2026-01-15T05:56:02.706Z",
+      "responseTime": 261,
       "statusCode": 200,
       "uptime": {
         "day": 100,
@@ -28258,7 +28270,7 @@
       },
       "avgResponseTime": {
         "day": 277,
-        "week": 474,
+        "week": 473,
         "month": 557
       }
     }

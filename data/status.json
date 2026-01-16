@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-01-16T23:23:42.160Z",
+  "lastUpdate": "2026-01-16T23:36:51.991Z",
   "overallStatus": "operational",
   "sites": {
     "api": {
@@ -15319,31 +15319,37 @@
           "statusCode": 200,
           "responseTime": 694,
           "timestamp": "2026-01-16T23:23:41.364Z"
+        },
+        {
+          "status": "up",
+          "statusCode": 200,
+          "responseTime": 665,
+          "timestamp": "2026-01-16T23:36:51.635Z"
         }
       ],
-      "lastCheck": "2026-01-16T23:23:41.364Z",
-      "responseTime": 694,
+      "lastCheck": "2026-01-16T23:36:51.635Z",
+      "responseTime": 665,
       "statusCode": 200,
       "uptime": {
-        "day": 75,
-        "week": 74.27,
-        "month": 77.08,
-        "all": 77.08
+        "day": 75.65,
+        "week": 74.24,
+        "month": 77.09,
+        "all": 77.09
       },
       "avgResponseTime": {
-        "day": 648,
-        "week": 645,
+        "day": 647,
+        "week": 646,
         "month": 665
       },
       "healthCheck": {
         "version": "1.0.0",
         "environment": "production",
-        "uptime": 369.829726646,
+        "uptime": 1160.109947659,
         "deployedAt": "2026-01-16T23:17:33.762Z",
         "checks": {
           "database": {
             "status": "up",
-            "latency": 183
+            "latency": 163
           },
           "redis": {
             "status": "up",
@@ -30669,10 +30675,16 @@
           "statusCode": 200,
           "responseTime": 359,
           "timestamp": "2026-01-16T23:23:42.150Z"
+        },
+        {
+          "status": "up",
+          "statusCode": 200,
+          "responseTime": 333,
+          "timestamp": "2026-01-16T23:36:51.982Z"
         }
       ],
-      "lastCheck": "2026-01-16T23:23:42.150Z",
-      "responseTime": 359,
+      "lastCheck": "2026-01-16T23:36:51.982Z",
+      "responseTime": 333,
       "statusCode": 200,
       "uptime": {
         "day": 100,
@@ -30681,8 +30693,8 @@
         "all": 99.8
       },
       "avgResponseTime": {
-        "day": 280,
-        "week": 396,
+        "day": 281,
+        "week": 395,
         "month": 536
       }
     }

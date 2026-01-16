@@ -6,7 +6,7 @@
 
 **Statut actuel:** 🟢 Tous les systèmes opérationnels
 
-*Dernière mise à jour: 16/01/2026 06:51:55*
+*Dernière mise à jour: 16/01/2026 06:57:37*
 
 ---
 
@@ -14,8 +14,8 @@
 
 | Service | État | Temps de réponse | Uptime (24h) | Uptime (7j) | Uptime (30j) |
 |---------|------|------------------|--------------|-------------|--------------|
-| **API** | ✅ Opérationnel | 746ms | 64.76% | 74.18% | 77.03% |
-| **Website** | ✅ Opérationnel | 283ms | 100% | 99.64% | 99.8% |
+| **API** | ✅ Opérationnel | 647ms | 64.42% | 74.18% | 77.04% |
+| **Website** | ✅ Opérationnel | 311ms | 100% | 99.64% | 99.8% |
 
 ---
 

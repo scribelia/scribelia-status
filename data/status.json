@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-01-17T18:52:08.276Z",
+  "lastUpdate": "2026-01-17T18:55:42.249Z",
   "overallStatus": "operational",
   "sites": {
     "api": {
@@ -15961,31 +15961,37 @@
           "statusCode": 200,
           "responseTime": 636,
           "timestamp": "2026-01-17T18:52:07.984Z"
+        },
+        {
+          "status": "up",
+          "statusCode": 200,
+          "responseTime": 486,
+          "timestamp": "2026-01-17T18:55:41.972Z"
         }
       ],
-      "lastCheck": "2026-01-17T18:52:07.984Z",
-      "responseTime": 636,
+      "lastCheck": "2026-01-17T18:55:41.972Z",
+      "responseTime": 486,
       "statusCode": 200,
       "uptime": {
-        "day": 83.45,
-        "week": 74.76,
-        "month": 77.32,
-        "all": 77.32
+        "day": 83.57,
+        "week": 74.79,
+        "month": 77.33,
+        "all": 77.33
       },
       "avgResponseTime": {
-        "day": 636,
-        "week": 645,
+        "day": 635,
+        "week": 644,
         "month": 664
       },
       "healthCheck": {
         "version": "1.0.0",
         "environment": "production",
-        "uptime": 1251.862266551,
+        "uptime": 1465.856088562,
         "deployedAt": "2026-01-17T18:31:19.535Z",
         "checks": {
           "database": {
             "status": "up",
-            "latency": 169
+            "latency": 162
           },
           "redis": {
             "status": "up",
@@ -31953,14 +31959,20 @@
           "statusCode": 200,
           "responseTime": 267,
           "timestamp": "2026-01-17T18:52:08.266Z"
+        },
+        {
+          "status": "up",
+          "statusCode": 200,
+          "responseTime": 252,
+          "timestamp": "2026-01-17T18:55:42.239Z"
         }
       ],
-      "lastCheck": "2026-01-17T18:52:08.266Z",
-      "responseTime": 267,
+      "lastCheck": "2026-01-17T18:55:42.239Z",
+      "responseTime": 252,
       "statusCode": 200,
       "uptime": {
-        "day": 99.28,
-        "week": 99.51,
+        "day": 99.29,
+        "week": 99.52,
         "month": 99.77,
         "all": 99.77
       },

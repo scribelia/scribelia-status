@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-01-17T11:55:03.345Z",
+  "lastUpdate": "2026-01-17T12:22:37.560Z",
   "overallStatus": "operational",
   "sites": {
     "api": {
@@ -15709,31 +15709,37 @@
           "statusCode": 200,
           "responseTime": 603,
           "timestamp": "2026-01-17T11:55:03.046Z"
+        },
+        {
+          "status": "up",
+          "statusCode": 200,
+          "responseTime": 577,
+          "timestamp": "2026-01-17T12:22:37.242Z"
         }
       ],
-      "lastCheck": "2026-01-17T11:55:03.046Z",
-      "responseTime": 603,
+      "lastCheck": "2026-01-17T12:22:37.242Z",
+      "responseTime": 577,
       "statusCode": 200,
       "uptime": {
         "day": 79.69,
-        "week": 74.82,
+        "week": 74.79,
         "month": 77.23,
         "all": 77.23
       },
       "avgResponseTime": {
-        "day": 641,
+        "day": 640,
         "week": 645,
         "month": 664
       },
       "healthCheck": {
         "version": "1.0.0",
         "environment": "production",
-        "uptime": 2606.482057303,
+        "uptime": 4260.645998686,
         "deployedAt": "2026-01-17T11:11:39.670Z",
         "checks": {
           "database": {
             "status": "up",
-            "latency": 97
+            "latency": 145
           },
           "redis": {
             "status": "up",
@@ -31449,10 +31455,16 @@
           "statusCode": 200,
           "responseTime": 277,
           "timestamp": "2026-01-17T11:55:03.336Z"
+        },
+        {
+          "status": "up",
+          "statusCode": 200,
+          "responseTime": 294,
+          "timestamp": "2026-01-17T12:22:37.550Z"
         }
       ],
-      "lastCheck": "2026-01-17T11:55:03.336Z",
-      "responseTime": 277,
+      "lastCheck": "2026-01-17T12:22:37.550Z",
+      "responseTime": 294,
       "statusCode": 200,
       "uptime": {
         "day": 99.22,
@@ -31462,8 +31474,8 @@
       },
       "avgResponseTime": {
         "day": 285,
-        "week": 369,
-        "month": 530
+        "week": 368,
+        "month": 529
       }
     }
   },

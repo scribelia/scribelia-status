@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-01-18T21:45:38.098Z",
+  "lastUpdate": "2026-01-18T21:52:57.823Z",
   "overallStatus": "operational",
   "sites": {
     "api": {
@@ -16957,31 +16957,37 @@
           "statusCode": 200,
           "responseTime": 514,
           "timestamp": "2026-01-18T21:45:37.886Z"
+        },
+        {
+          "status": "up",
+          "statusCode": 200,
+          "responseTime": 649,
+          "timestamp": "2026-01-18T21:52:57.511Z"
         }
       ],
-      "lastCheck": "2026-01-18T21:45:37.886Z",
-      "responseTime": 514,
+      "lastCheck": "2026-01-18T21:52:57.511Z",
+      "responseTime": 649,
       "statusCode": 200,
       "uptime": {
-        "day": 88.81,
+        "day": 88.73,
         "week": 76.48,
-        "month": 78.02,
-        "all": 78.02
+        "month": 78.03,
+        "all": 78.03
       },
       "avgResponseTime": {
-        "day": 620,
+        "day": 619,
         "week": 644,
         "month": 661
       },
       "healthCheck": {
         "version": "1.0.0",
         "environment": "production",
-        "uptime": 11524.094447968,
+        "uptime": 11963.694864638,
         "deployedAt": "2026-01-18T18:33:37.045Z",
         "checks": {
           "database": {
             "status": "up",
-            "latency": 169
+            "latency": 189
           },
           "redis": {
             "status": "up",
@@ -33945,10 +33951,16 @@
           "statusCode": 200,
           "responseTime": 185,
           "timestamp": "2026-01-18T21:45:38.087Z"
+        },
+        {
+          "status": "up",
+          "statusCode": 200,
+          "responseTime": 282,
+          "timestamp": "2026-01-18T21:52:57.812Z"
         }
       ],
-      "lastCheck": "2026-01-18T21:45:38.087Z",
-      "responseTime": 185,
+      "lastCheck": "2026-01-18T21:52:57.812Z",
+      "responseTime": 282,
       "statusCode": 200,
       "uptime": {
         "day": 100,
@@ -33957,8 +33969,8 @@
         "all": 99.79
       },
       "avgResponseTime": {
-        "day": 264,
-        "week": 289,
+        "day": 261,
+        "week": 290,
         "month": 510
       }
     }

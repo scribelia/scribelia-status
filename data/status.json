@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-01-18T11:28:06.690Z",
+  "lastUpdate": "2026-01-18T11:29:01.166Z",
   "overallStatus": "operational",
   "sites": {
     "api": {
@@ -16519,35 +16519,41 @@
           "statusCode": 200,
           "responseTime": 671,
           "timestamp": "2026-01-18T11:28:06.343Z"
+        },
+        {
+          "status": "up",
+          "statusCode": 200,
+          "responseTime": 600,
+          "timestamp": "2026-01-18T11:29:00.835Z"
         }
       ],
-      "lastCheck": "2026-01-18T11:28:06.343Z",
-      "responseTime": 671,
+      "lastCheck": "2026-01-18T11:29:00.835Z",
+      "responseTime": 600,
       "statusCode": 200,
       "uptime": {
         "day": 85.21,
-        "week": 75.45,
-        "month": 77.58,
-        "all": 77.58
+        "week": 75.48,
+        "month": 77.59,
+        "all": 77.59
       },
       "avgResponseTime": {
-        "day": 619,
-        "week": 643,
+        "day": 620,
+        "week": 642,
         "month": 662
       },
       "healthCheck": {
         "version": "1.0.0",
         "environment": "production",
-        "uptime": 3026.257252553,
+        "uptime": 3080.801367617,
         "deployedAt": "2026-01-18T10:37:42.266Z",
         "checks": {
           "database": {
             "status": "up",
-            "latency": 190
+            "latency": 167
           },
           "redis": {
             "status": "up",
-            "latency": 1
+            "latency": null
           }
         }
       }
@@ -33069,10 +33075,16 @@
           "statusCode": 200,
           "responseTime": 317,
           "timestamp": "2026-01-18T11:28:06.680Z"
+        },
+        {
+          "status": "up",
+          "statusCode": 200,
+          "responseTime": 305,
+          "timestamp": "2026-01-18T11:29:01.156Z"
         }
       ],
-      "lastCheck": "2026-01-18T11:28:06.680Z",
-      "responseTime": 317,
+      "lastCheck": "2026-01-18T11:29:01.156Z",
+      "responseTime": 305,
       "statusCode": 200,
       "uptime": {
         "day": 100,

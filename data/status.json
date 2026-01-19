@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-01-19T06:00:44.424Z",
+  "lastUpdate": "2026-01-19T06:19:59.042Z",
   "overallStatus": "operational",
   "sites": {
     "api": {
@@ -17131,31 +17131,37 @@
           "statusCode": 200,
           "responseTime": 609,
           "timestamp": "2026-01-19T06:00:44.094Z"
+        },
+        {
+          "status": "up",
+          "statusCode": 200,
+          "responseTime": 389,
+          "timestamp": "2026-01-19T06:19:58.659Z"
         }
       ],
-      "lastCheck": "2026-01-19T06:00:44.094Z",
-      "responseTime": 609,
+      "lastCheck": "2026-01-19T06:19:58.659Z",
+      "responseTime": 389,
       "statusCode": 200,
       "uptime": {
-        "day": 86.96,
-        "week": 76.33,
-        "month": 78.03,
-        "all": 78.03
+        "day": 87.05,
+        "week": 76.36,
+        "month": 78.04,
+        "all": 78.04
       },
       "avgResponseTime": {
-        "day": 625,
+        "day": 623,
         "week": 643,
         "month": 660
       },
       "healthCheck": {
         "version": "1.0.0",
         "environment": "production",
-        "uptime": 875.052432801,
+        "uptime": 2029.649526215,
         "deployedAt": "2026-01-19T05:46:11.585Z",
         "checks": {
           "database": {
             "status": "up",
-            "latency": 158
+            "latency": 148
           },
           "redis": {
             "status": "up",
@@ -34293,10 +34299,16 @@
           "statusCode": 200,
           "responseTime": 303,
           "timestamp": "2026-01-19T06:00:44.413Z"
+        },
+        {
+          "status": "up",
+          "statusCode": 200,
+          "responseTime": 355,
+          "timestamp": "2026-01-19T06:19:59.031Z"
         }
       ],
-      "lastCheck": "2026-01-19T06:00:44.413Z",
-      "responseTime": 303,
+      "lastCheck": "2026-01-19T06:19:59.031Z",
+      "responseTime": 355,
       "statusCode": 200,
       "uptime": {
         "day": 100,
@@ -34307,7 +34319,7 @@
       "avgResponseTime": {
         "day": 263,
         "week": 281,
-        "month": 508
+        "month": 507
       }
     }
   },

@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-01-19T20:51:21.910Z",
+  "lastUpdate": "2026-01-19T20:56:02.502Z",
   "overallStatus": "operational",
   "sites": {
     "api": {
@@ -17545,31 +17545,37 @@
           "statusCode": 200,
           "responseTime": 622,
           "timestamp": "2026-01-19T20:51:21.607Z"
+        },
+        {
+          "status": "up",
+          "statusCode": 200,
+          "responseTime": 539,
+          "timestamp": "2026-01-19T20:56:02.190Z"
         }
       ],
-      "lastCheck": "2026-01-19T20:51:21.607Z",
-      "responseTime": 622,
+      "lastCheck": "2026-01-19T20:56:02.190Z",
+      "responseTime": 539,
       "statusCode": 200,
       "uptime": {
         "day": 76.42,
         "week": 77.27,
-        "month": 77.9,
-        "all": 77.9
+        "month": 77.91,
+        "all": 77.91
       },
       "avgResponseTime": {
-        "day": 630,
-        "week": 644,
+        "day": 629,
+        "week": 643,
         "month": 660
       },
       "healthCheck": {
         "version": "1.0.0",
         "environment": "production",
-        "uptime": 868.739222771,
+        "uptime": 1149.314935704,
         "deployedAt": "2026-01-19T20:36:55.542Z",
         "checks": {
           "database": {
             "status": "up",
-            "latency": 160
+            "latency": 172
           },
           "redis": {
             "status": "up",
@@ -35121,9 +35127,15 @@
           "statusCode": 200,
           "responseTime": 275,
           "timestamp": "2026-01-19T20:51:21.899Z"
+        },
+        {
+          "status": "up",
+          "statusCode": 200,
+          "responseTime": 275,
+          "timestamp": "2026-01-19T20:56:02.491Z"
         }
       ],
-      "lastCheck": "2026-01-19T20:51:21.899Z",
+      "lastCheck": "2026-01-19T20:56:02.491Z",
       "responseTime": 275,
       "statusCode": 200,
       "uptime": {
@@ -35133,7 +35145,7 @@
         "all": 99.79
       },
       "avgResponseTime": {
-        "day": 272,
+        "day": 273,
         "week": 279,
         "month": 502
       }

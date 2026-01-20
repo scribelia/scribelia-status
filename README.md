@@ -6,7 +6,7 @@
 
 **Statut actuel:** 🟢 Tous les systèmes opérationnels
 
-*Dernière mise à jour: 20/01/2026 21:57:58*
+*Dernière mise à jour: 20/01/2026 22:01:13*
 
 ---
 
@@ -14,8 +14,8 @@
 
 | Service | État | Temps de réponse | Uptime (24h) | Uptime (7j) | Uptime (30j) |
 |---------|------|------------------|--------------|-------------|--------------|
-| **API** | ✅ Opérationnel | 637ms | 60.67% | 76.37% | 77.4% |
-| **Website** | ✅ Opérationnel | 351ms | 100% | 99.88% | 99.8% |
+| **API** | ✅ Opérationnel | 583ms | 60.67% | 76.37% | 77.41% |
+| **Website** | ✅ Opérationnel | 214ms | 100% | 99.88% | 99.8% |
 
 ---
 
@@ -23,7 +23,7 @@
 
 ### 🚨 Incidents en cours
 
-- **API** - ❌ Hors service depuis 8j 6h
+- **API** - ❌ Hors service depuis 8j 7h
 - **API** - ⚠️ Dégradé depuis 8j 8h
 
 ### ✅ Incidents résolus récemment
@@ -41,13 +41,13 @@
 ### API
 - **URL:** `https://api.scribelia.com/health`
 - **Description:** API Backend
-- **Temps de réponse moyen (24h):** 633ms
+- **Temps de réponse moyen (24h):** 631ms
 - **Temps de réponse moyen (7j):** 638ms
 
 ### Website
 - **URL:** `https://scribelia.com`
 - **Description:** Frontend Application
-- **Temps de réponse moyen (24h):** 273ms
+- **Temps de réponse moyen (24h):** 272ms
 - **Temps de réponse moyen (7j):** 276ms
 
 ---

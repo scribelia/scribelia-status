@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-01-21T15:41:41.965Z",
+  "lastUpdate": "2026-01-21T15:58:14.934Z",
   "overallStatus": "degraded",
   "sites": {
     "api": {
@@ -18505,31 +18505,37 @@
           "statusCode": 200,
           "responseTime": 8415,
           "timestamp": "2026-01-21T15:41:41.597Z"
+        },
+        {
+          "status": "degraded",
+          "statusCode": 200,
+          "responseTime": 6813,
+          "timestamp": "2026-01-21T15:58:14.636Z"
         }
       ],
-      "lastCheck": "2026-01-21T15:41:41.597Z",
-      "responseTime": 8415,
+      "lastCheck": "2026-01-21T15:58:14.636Z",
+      "responseTime": 6813,
       "statusCode": 200,
       "uptime": {
-        "day": 67.05,
-        "week": 76.2,
-        "month": 77.26,
-        "all": 77.26
+        "day": 66.67,
+        "week": 76.04,
+        "month": 77.24,
+        "all": 77.24
       },
       "avgResponseTime": {
-        "day": 631,
-        "week": 633,
+        "day": 628,
+        "week": 634,
         "month": 659
       },
       "healthCheck": {
         "version": "1.0.0",
         "environment": "production",
-        "uptime": 6.941484093,
-        "deployedAt": "2026-01-21T15:41:37.743Z",
+        "uptime": 5.429349918,
+        "deployedAt": "2026-01-21T15:58:11.277Z",
         "checks": {
           "database": {
             "status": "up",
-            "latency": 442
+            "latency": 421
           },
           "redis": {
             "status": "up",
@@ -37041,10 +37047,16 @@
           "statusCode": 200,
           "responseTime": 333,
           "timestamp": "2026-01-21T15:41:41.952Z"
+        },
+        {
+          "status": "up",
+          "statusCode": 200,
+          "responseTime": 257,
+          "timestamp": "2026-01-21T15:58:14.922Z"
         }
       ],
-      "lastCheck": "2026-01-21T15:41:41.952Z",
-      "responseTime": 333,
+      "lastCheck": "2026-01-21T15:58:14.922Z",
+      "responseTime": 257,
       "statusCode": 200,
       "uptime": {
         "day": 100,
@@ -37053,7 +37065,7 @@
         "all": 99.81
       },
       "avgResponseTime": {
-        "day": 291,
+        "day": 289,
         "week": 275,
         "month": 490
       }

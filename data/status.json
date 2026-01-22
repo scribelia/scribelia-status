@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-01-22T19:01:33.275Z",
+  "lastUpdate": "2026-01-22T19:14:50.208Z",
   "overallStatus": "operational",
   "sites": {
     "api": {
@@ -19081,14 +19081,20 @@
           "statusCode": 200,
           "responseTime": 526,
           "timestamp": "2026-01-22T19:01:33.075Z"
+        },
+        {
+          "status": "up",
+          "statusCode": 200,
+          "responseTime": 519,
+          "timestamp": "2026-01-22T19:14:49.967Z"
         }
       ],
-      "lastCheck": "2026-01-22T19:01:33.075Z",
-      "responseTime": 526,
+      "lastCheck": "2026-01-22T19:14:49.967Z",
+      "responseTime": 519,
       "statusCode": 200,
       "uptime": {
         "day": 57.95,
-        "week": 74.74,
+        "week": 74.77,
         "month": 76.6,
         "all": 76.6
       },
@@ -19100,16 +19106,16 @@
       "healthCheck": {
         "version": "1.0.0",
         "environment": "production",
-        "uptime": 1553.666353932,
+        "uptime": 2350.590811213,
         "deployedAt": "2026-01-22T18:35:44.271Z",
         "checks": {
           "database": {
             "status": "up",
-            "latency": 218
+            "latency": 172
           },
           "redis": {
             "status": "up",
-            "latency": null
+            "latency": 1
           }
         }
       }
@@ -38193,10 +38199,16 @@
           "statusCode": 200,
           "responseTime": 170,
           "timestamp": "2026-01-22T19:01:33.263Z"
+        },
+        {
+          "status": "up",
+          "statusCode": 200,
+          "responseTime": 211,
+          "timestamp": "2026-01-22T19:14:50.196Z"
         }
       ],
-      "lastCheck": "2026-01-22T19:01:33.263Z",
-      "responseTime": 170,
+      "lastCheck": "2026-01-22T19:14:50.196Z",
+      "responseTime": 211,
       "statusCode": 200,
       "uptime": {
         "day": 100,
@@ -38205,7 +38217,7 @@
         "all": 99.81
       },
       "avgResponseTime": {
-        "day": 312,
+        "day": 304,
         "week": 278,
         "month": 485
       }

@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-01-24T23:46:42.336Z",
+  "lastUpdate": "2026-01-24T23:49:17.379Z",
   "overallStatus": "operational",
   "sites": {
     "api": {
@@ -20695,16 +20695,22 @@
           "statusCode": 200,
           "responseTime": 563,
           "timestamp": "2026-01-24T23:46:41.999Z"
+        },
+        {
+          "status": "up",
+          "statusCode": 200,
+          "responseTime": 611,
+          "timestamp": "2026-01-24T23:49:16.653Z"
         }
       ],
-      "lastCheck": "2026-01-24T23:46:41.999Z",
-      "responseTime": 563,
+      "lastCheck": "2026-01-24T23:49:16.653Z",
+      "responseTime": 611,
       "statusCode": 200,
       "uptime": {
-        "day": 77.94,
+        "day": 78.1,
         "week": 73.6,
-        "month": 76.71,
-        "all": 76.71
+        "month": 76.72,
+        "all": 76.72
       },
       "avgResponseTime": {
         "day": 620,
@@ -20714,12 +20720,12 @@
       "healthCheck": {
         "version": "1.0.0",
         "environment": "production",
-        "uptime": 1565.757783818,
+        "uptime": 1720.453678694,
         "deployedAt": "2026-01-24T23:20:39.071Z",
         "checks": {
           "database": {
             "status": "up",
-            "latency": 167
+            "latency": 115
           },
           "redis": {
             "status": "up",
@@ -41421,10 +41427,16 @@
           "statusCode": 200,
           "responseTime": 287,
           "timestamp": "2026-01-24T23:46:42.318Z"
+        },
+        {
+          "status": "up",
+          "statusCode": 200,
+          "responseTime": 694,
+          "timestamp": "2026-01-24T23:49:17.366Z"
         }
       ],
-      "lastCheck": "2026-01-24T23:46:42.318Z",
-      "responseTime": 287,
+      "lastCheck": "2026-01-24T23:49:17.366Z",
+      "responseTime": 694,
       "statusCode": 200,
       "uptime": {
         "day": 100,
@@ -41433,7 +41445,7 @@
         "all": 99.83
       },
       "avgResponseTime": {
-        "day": 415,
+        "day": 417,
         "week": 307,
         "month": 475
       }

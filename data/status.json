@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-01-25T11:14:32.132Z",
+  "lastUpdate": "2026-01-25T11:24:10.364Z",
   "overallStatus": "operational",
   "sites": {
     "api": {
@@ -20971,16 +20971,22 @@
           "statusCode": 200,
           "responseTime": 692,
           "timestamp": "2026-01-25T11:14:31.319Z"
+        },
+        {
+          "status": "up",
+          "statusCode": 200,
+          "responseTime": 659,
+          "timestamp": "2026-01-25T11:24:09.495Z"
         }
       ],
-      "lastCheck": "2026-01-25T11:14:31.319Z",
-      "responseTime": 692,
+      "lastCheck": "2026-01-25T11:24:09.495Z",
+      "responseTime": 659,
       "statusCode": 200,
       "uptime": {
         "day": 78.29,
         "week": 73.52,
-        "month": 76.7,
-        "all": 76.7
+        "month": 76.71,
+        "all": 76.71
       },
       "avgResponseTime": {
         "day": 605,
@@ -20990,12 +20996,12 @@
       "healthCheck": {
         "version": "1.0.0",
         "environment": "production",
-        "uptime": 2099.289772534,
+        "uptime": 2677.436928815,
         "deployedAt": "2026-01-25T10:39:35.161Z",
         "checks": {
           "database": {
             "status": "up",
-            "latency": 162
+            "latency": 188
           },
           "redis": {
             "status": "up",
@@ -41973,10 +41979,16 @@
           "statusCode": 200,
           "responseTime": 782,
           "timestamp": "2026-01-25T11:14:32.119Z"
+        },
+        {
+          "status": "up",
+          "statusCode": 200,
+          "responseTime": 835,
+          "timestamp": "2026-01-25T11:24:10.351Z"
         }
       ],
-      "lastCheck": "2026-01-25T11:14:32.119Z",
-      "responseTime": 782,
+      "lastCheck": "2026-01-25T11:24:10.351Z",
+      "responseTime": 835,
       "statusCode": 200,
       "uptime": {
         "day": 100,
@@ -41985,8 +41997,8 @@
         "all": 99.83
       },
       "avgResponseTime": {
-        "day": 441,
-        "week": 316,
+        "day": 445,
+        "week": 317,
         "month": 474
       }
     }

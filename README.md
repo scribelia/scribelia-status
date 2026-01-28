@@ -1,12 +1,12 @@
-# 🟢 Scribelia Status
+# 🔴 Scribelia Status
 
 [![Status](https://status.scribelia.com/badge.svg)](https://status.scribelia.com)
 
 > État des services Scribelia en temps réel
 
-**Statut actuel:** 🟢 Tous les systèmes opérationnels
+**Statut actuel:** 🔴 Panne détectée
 
-*Dernière mise à jour: 28/01/2026 21:00:29*
+*Dernière mise à jour: 28/01/2026 21:40:11*
 
 ---
 
@@ -14,8 +14,8 @@
 
 | Service | État | Temps de réponse | Uptime (24h) | Uptime (7j) | Uptime (30j) |
 |---------|------|------------------|--------------|-------------|--------------|
-| **API** | ✅ Opérationnel | 789ms | 64.13% | 70.57% | 75.03% |
-| **Website** | ✅ Opérationnel | 239ms | 100% | 99.59% | 99.77% |
+| **API** | ❌ Hors service | 10004ms | 63.74% | 70.53% | 75.02% |
+| **Website** | ✅ Opérationnel | 541ms | 100% | 99.59% | 99.77% |
 
 ---
 
@@ -23,13 +23,14 @@
 
 ### 🚨 Incidents en cours
 
-- **API** - ⚠️ Dégradé depuis 1h 40m
-- **API** - ⚠️ Dégradé depuis 6h 50m
-- **API** - ⚠️ Dégradé depuis 3j 2h
+- **API** - ❌ Hors service depuis 1s
+- **API** - ⚠️ Dégradé depuis 2h 19m
+- **API** - ⚠️ Dégradé depuis 7h 30m
+- **API** - ⚠️ Dégradé depuis 3j 3h
 - **API** - ❌ Hors service depuis 7j 5h
 - **API** - ⚠️ Dégradé depuis 7j 5h
-- **API** - ❌ Hors service depuis 16j 5h
-- **API** - ⚠️ Dégradé depuis 16j 7h
+- **API** - ❌ Hors service depuis 16j 6h
+- **API** - ⚠️ Dégradé depuis 16j 8h
 
 ### ✅ Incidents résolus récemment
 
@@ -46,14 +47,14 @@
 ### API
 - **URL:** `https://api.scribelia.com/health`
 - **Description:** API Backend
-- **Temps de réponse moyen (24h):** 693ms
+- **Temps de réponse moyen (24h):** 691ms
 - **Temps de réponse moyen (7j):** 643ms
 
 ### Website
 - **URL:** `https://scribelia.com`
 - **Description:** Frontend Application
-- **Temps de réponse moyen (24h):** 317ms
-- **Temps de réponse moyen (7j):** 347ms
+- **Temps de réponse moyen (24h):** 319ms
+- **Temps de réponse moyen (7j):** 348ms
 
 ---
 

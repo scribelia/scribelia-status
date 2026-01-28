@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-01-28T11:43:03.035Z",
+  "lastUpdate": "2026-01-28T11:48:50.703Z",
   "overallStatus": "operational",
   "sites": {
     "api": {
@@ -22807,16 +22807,22 @@
           "statusCode": 200,
           "responseTime": 605,
           "timestamp": "2026-01-28T11:43:02.789Z"
+        },
+        {
+          "status": "up",
+          "statusCode": 200,
+          "responseTime": 625,
+          "timestamp": "2026-01-28T11:48:50.385Z"
         }
       ],
-      "lastCheck": "2026-01-28T11:43:02.789Z",
-      "responseTime": 605,
+      "lastCheck": "2026-01-28T11:48:50.385Z",
+      "responseTime": 625,
       "statusCode": 200,
       "uptime": {
-        "day": 62.77,
-        "week": 70.18,
+        "day": 63.16,
+        "week": 70.22,
         "month": 75.19,
-        "all": 76
+        "all": 76.01
       },
       "avgResponseTime": {
         "day": 662,
@@ -22826,12 +22832,12 @@
       "healthCheck": {
         "version": "1.0.0",
         "environment": "production",
-        "uptime": 1029.488768395,
+        "uptime": 1377.112195731,
         "deployedAt": "2026-01-28T11:25:57.444Z",
         "checks": {
           "database": {
             "status": "up",
-            "latency": 224
+            "latency": 189
           },
           "redis": {
             "status": "up",
@@ -45645,10 +45651,16 @@
           "statusCode": 200,
           "responseTime": 214,
           "timestamp": "2026-01-28T11:43:03.021Z"
+        },
+        {
+          "status": "up",
+          "statusCode": 200,
+          "responseTime": 285,
+          "timestamp": "2026-01-28T11:48:50.689Z"
         }
       ],
-      "lastCheck": "2026-01-28T11:43:03.021Z",
-      "responseTime": 214,
+      "lastCheck": "2026-01-28T11:48:50.689Z",
+      "responseTime": 285,
       "statusCode": 200,
       "uptime": {
         "day": 100,
@@ -45657,7 +45669,7 @@
         "all": 99.76
       },
       "avgResponseTime": {
-        "day": 307,
+        "day": 306,
         "week": 347,
         "month": 450
       }

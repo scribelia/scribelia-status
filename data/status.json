@@ -1,12 +1,12 @@
 {
-  "lastUpdate": "2026-01-28T18:20:22.963Z",
-  "overallStatus": "degraded",
+  "lastUpdate": "2026-01-28T18:50:31.455Z",
+  "overallStatus": "outage",
   "sites": {
     "api": {
       "name": "API",
       "url": "https://api.scribelia.com/health",
       "description": "API Backend",
-      "status": "degraded",
+      "status": "down",
       "history": [
         {
           "status": "up",
@@ -22945,16 +22945,22 @@
           "statusCode": 200,
           "responseTime": 9857,
           "timestamp": "2026-01-28T18:20:22.175Z"
+        },
+        {
+          "status": "down",
+          "statusCode": 0,
+          "responseTime": 10004,
+          "timestamp": "2026-01-28T18:50:30.598Z"
         }
       ],
-      "lastCheck": "2026-01-28T18:20:22.175Z",
-      "responseTime": 9857,
-      "statusCode": 200,
+      "lastCheck": "2026-01-28T18:50:30.598Z",
+      "responseTime": 10004,
+      "statusCode": 0,
       "uptime": {
-        "day": 64.52,
+        "day": 63.83,
         "week": 70.44,
-        "month": 75.11,
-        "all": 75.88
+        "month": 75.09,
+        "all": 75.86
       },
       "avgResponseTime": {
         "day": 678,
@@ -45921,10 +45927,16 @@
           "statusCode": 200,
           "responseTime": 376,
           "timestamp": "2026-01-28T18:20:22.947Z"
+        },
+        {
+          "status": "up",
+          "statusCode": 200,
+          "responseTime": 281,
+          "timestamp": "2026-01-28T18:50:31.439Z"
         }
       ],
-      "lastCheck": "2026-01-28T18:20:22.947Z",
-      "responseTime": 376,
+      "lastCheck": "2026-01-28T18:50:31.439Z",
+      "responseTime": 281,
       "statusCode": 200,
       "uptime": {
         "day": 100,
@@ -45940,6 +45952,21 @@
     }
   },
   "incidents": [
+    {
+      "id": 1769626231158,
+      "site": "API",
+      "slug": "api",
+      "status": "down",
+      "startedAt": "2026-01-28T18:50:30.598Z",
+      "resolvedAt": null,
+      "updates": [
+        {
+          "status": "down",
+          "message": "API is down",
+          "timestamp": "2026-01-28T18:50:30.598Z"
+        }
+      ]
+    },
     {
       "id": 1769624422570,
       "site": "API",

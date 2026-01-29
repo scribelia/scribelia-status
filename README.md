@@ -1,12 +1,12 @@
-# 🟡 Scribelia Status
+# 🟢 Scribelia Status
 
 [![Status](https://status.scribelia.com/badge.svg)](https://status.scribelia.com)
 
 > État des services Scribelia en temps réel
 
-**Statut actuel:** 🟡 Performance dégradée
+**Statut actuel:** 🟢 Tous les systèmes opérationnels
 
-*Dernière mise à jour: 29/01/2026 11:51:50*
+*Dernière mise à jour: 29/01/2026 12:03:18*
 
 ---
 
@@ -14,8 +14,8 @@
 
 | Service | État | Temps de réponse | Uptime (24h) | Uptime (7j) | Uptime (30j) |
 |---------|------|------------------|--------------|-------------|--------------|
-| **API** | ⚠️ Dégradé | 8781ms | 56.76% | 70.74% | 74.7% |
-| **Website** | ✅ Opérationnel | 184ms | 100% | 99.58% | 99.77% |
+| **API** | ✅ Opérationnel | 595ms | 57.53% | 70.69% | 74.7% |
+| **Website** | ✅ Opérationnel | 352ms | 100% | 99.58% | 99.77% |
 
 ---
 
@@ -23,22 +23,21 @@
 
 ### 🚨 Incidents en cours
 
-- **API** - ⚠️ Dégradé depuis 28m
-- **API** - ⚠️ Dégradé depuis 16h 31m
-- **API** - ⚠️ Dégradé depuis 21h 41m
+- **API** - ⚠️ Dégradé depuis 16h 42m
+- **API** - ⚠️ Dégradé depuis 21h 53m
 - **API** - ⚠️ Dégradé depuis 3j 17h
-- **API** - ❌ Hors service depuis 7j 19h
-- **API** - ⚠️ Dégradé depuis 7j 19h
-- **API** - ❌ Hors service depuis 16j 20h
+- **API** - ❌ Hors service depuis 7j 20h
+- **API** - ⚠️ Dégradé depuis 7j 20h
+- **API** - ❌ Hors service depuis 16j 21h
 - **API** - ⚠️ Dégradé depuis 16j 22h
 
 ### ✅ Incidents résolus récemment
 
+- **API** - 29/01/2026 - Résolu en 40m
 - **API** - 29/01/2026 - Résolu en 14m
 - **API** - 29/01/2026 - Résolu en 17m
 - **API** - 29/01/2026 - Résolu en 1h 32m
 - **API** - 29/01/2026 - Résolu en 3m
-- **API** - 29/01/2026 - Résolu en 26s
 
 ---
 
@@ -47,13 +46,13 @@
 ### API
 - **URL:** `https://api.scribelia.com/health`
 - **Description:** API Backend
-- **Temps de réponse moyen (24h):** 695ms
+- **Temps de réponse moyen (24h):** 688ms
 - **Temps de réponse moyen (7j):** 645ms
 
 ### Website
 - **URL:** `https://scribelia.com`
 - **Description:** Frontend Application
-- **Temps de réponse moyen (24h):** 310ms
+- **Temps de réponse moyen (24h):** 311ms
 - **Temps de réponse moyen (7j):** 349ms
 
 ---

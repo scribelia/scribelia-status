@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-01-31T19:53:54.957Z",
+  "lastUpdate": "2026-01-31T19:55:10.604Z",
   "overallStatus": "operational",
   "sites": {
     "api": {
@@ -24349,35 +24349,41 @@
           "statusCode": 200,
           "responseTime": 543,
           "timestamp": "2026-01-31T19:53:54.677Z"
+        },
+        {
+          "status": "up",
+          "statusCode": 200,
+          "responseTime": 424,
+          "timestamp": "2026-01-31T19:55:10.306Z"
         }
       ],
-      "lastCheck": "2026-01-31T19:53:54.677Z",
-      "responseTime": 543,
+      "lastCheck": "2026-01-31T19:55:10.306Z",
+      "responseTime": 424,
       "statusCode": 200,
       "uptime": {
-        "day": 64.52,
-        "week": 65.99,
-        "month": 73.54,
-        "all": 74.93
+        "day": 64.89,
+        "week": 66.04,
+        "month": 73.55,
+        "all": 74.94
       },
       "avgResponseTime": {
-        "day": 644,
-        "week": 652,
+        "day": 640,
+        "week": 651,
         "month": 635
       },
       "healthCheck": {
         "version": "1.0.0",
         "environment": "production",
-        "uptime": 1494.219861635,
+        "uptime": 1569.879509742,
         "deployedAt": "2026-01-31T19:29:05.257Z",
         "checks": {
           "database": {
             "status": "up",
-            "latency": 160
+            "latency": 107
           },
           "redis": {
             "status": "up",
-            "latency": 1
+            "latency": null
           }
         }
       }
@@ -48729,10 +48735,16 @@
           "statusCode": 200,
           "responseTime": 244,
           "timestamp": "2026-01-31T19:53:54.941Z"
+        },
+        {
+          "status": "up",
+          "statusCode": 200,
+          "responseTime": 263,
+          "timestamp": "2026-01-31T19:55:10.589Z"
         }
       ],
-      "lastCheck": "2026-01-31T19:53:54.941Z",
-      "responseTime": 244,
+      "lastCheck": "2026-01-31T19:55:10.589Z",
+      "responseTime": 263,
       "statusCode": 200,
       "uptime": {
         "day": 100,

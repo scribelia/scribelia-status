@@ -1,12 +1,12 @@
 {
-  "lastUpdate": "2026-01-31T17:57:28.481Z",
-  "overallStatus": "operational",
+  "lastUpdate": "2026-01-31T18:22:02.192Z",
+  "overallStatus": "outage",
   "sites": {
     "api": {
       "name": "API",
       "url": "https://api.scribelia.com/health",
       "description": "API Backend",
-      "status": "up",
+      "status": "down",
       "history": [
         {
           "status": "up",
@@ -24289,16 +24289,22 @@
           "statusCode": 200,
           "responseTime": 503,
           "timestamp": "2026-01-31T17:57:28.190Z"
+        },
+        {
+          "status": "down",
+          "statusCode": 0,
+          "responseTime": 10004,
+          "timestamp": "2026-01-31T18:22:01.550Z"
         }
       ],
-      "lastCheck": "2026-01-31T17:57:28.190Z",
-      "responseTime": 503,
-      "statusCode": 200,
+      "lastCheck": "2026-01-31T18:22:01.550Z",
+      "responseTime": 10004,
+      "statusCode": 0,
       "uptime": {
         "day": 60.67,
         "week": 66.09,
-        "month": 73.6,
-        "all": 74.94
+        "month": 73.57,
+        "all": 74.93
       },
       "avgResponseTime": {
         "day": 646,
@@ -48609,9 +48615,15 @@
           "statusCode": 200,
           "responseTime": 245,
           "timestamp": "2026-01-31T17:57:28.466Z"
+        },
+        {
+          "status": "up",
+          "statusCode": 200,
+          "responseTime": 245,
+          "timestamp": "2026-01-31T18:22:02.175Z"
         }
       ],
-      "lastCheck": "2026-01-31T17:57:28.466Z",
+      "lastCheck": "2026-01-31T18:22:02.175Z",
       "responseTime": 245,
       "statusCode": 200,
       "uptime": {
@@ -48621,13 +48633,28 @@
         "all": 99.78
       },
       "avgResponseTime": {
-        "day": 279,
+        "day": 276,
         "week": 338,
         "month": 418
       }
     }
   },
   "incidents": [
+    {
+      "id": 1769883721929,
+      "site": "API",
+      "slug": "api",
+      "status": "down",
+      "startedAt": "2026-01-31T18:22:01.550Z",
+      "resolvedAt": null,
+      "updates": [
+        {
+          "status": "down",
+          "message": "API is down",
+          "timestamp": "2026-01-31T18:22:01.550Z"
+        }
+      ]
+    },
     {
       "id": 1769881208766,
       "site": "API",

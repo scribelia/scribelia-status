@@ -1,12 +1,12 @@
-# 🔴 Scribelia Status
+# 🟢 Scribelia Status
 
 [![Status](https://status.scribelia.com/badge.svg)](https://status.scribelia.com)
 
 > État des services Scribelia en temps réel
 
-**Statut actuel:** 🔴 Panne détectée
+**Statut actuel:** 🟢 Tous les systèmes opérationnels
 
-*Dernière mise à jour: 01/02/2026 12:16:10*
+*Dernière mise à jour: 01/02/2026 12:22:57*
 
 ---
 
@@ -14,8 +14,8 @@
 
 | Service | État | Temps de réponse | Uptime (24h) | Uptime (7j) | Uptime (30j) |
 |---------|------|------------------|--------------|-------------|--------------|
-| **API** | ❌ Hors service | 10004ms | 65.93% | 63.95% | 73.4% |
-| **Website** | ✅ Opérationnel | 161ms | 100% | 99.51% | 99.79% |
+| **API** | ✅ Opérationnel | 646ms | 66.3% | 64.01% | 73.41% |
+| **Website** | ✅ Opérationnel | 271ms | 100% | 99.51% | 99.79% |
 
 ---
 
@@ -23,18 +23,17 @@
 
 ### 🚨 Incidents en cours
 
-- **API** - ❌ Hors service depuis 0s
-- **API** - ❌ Hors service depuis 16h 54m
-- **API** - ⚠️ Dégradé depuis 22h 56m
+- **API** - ❌ Hors service depuis 17h 0m
+- **API** - ⚠️ Dégradé depuis 23h 3m
 - **API** - ⚠️ Dégradé depuis 1j 0h
-- **API** - ❌ Hors service depuis 1j 3h
+- **API** - ❌ Hors service depuis 1j 4h
 - **API** - ❌ Hors service depuis 1j 16h
 - **API** - ⚠️ Dégradé depuis 1j 16h
-- **API** - ❌ Hors service depuis 1j 16h
-- **API** - ❌ Hors service depuis 1j 18h
+- **API** - ❌ Hors service depuis 1j 17h
+- **API** - ❌ Hors service depuis 1j 19h
 - **API** - ❌ Hors service depuis 2j 17h
-- **API** - ❌ Hors service depuis 2j 18h
-- **API** - ⚠️ Dégradé depuis 3j 16h
+- **API** - ❌ Hors service depuis 2j 19h
+- **API** - ⚠️ Dégradé depuis 3j 17h
 - **API** - ⚠️ Dégradé depuis 3j 22h
 - **API** - ⚠️ Dégradé depuis 6j 18h
 - **API** - ❌ Hors service depuis 10j 20h
@@ -44,11 +43,11 @@
 
 ### ✅ Incidents résolus récemment
 
+- **API** - 01/02/2026 - Résolu en 6m
 - **API** - 01/02/2026 - Résolu en 23m
 - **API** - 01/02/2026 - Résolu en 21m
 - **API** - 01/02/2026 - Résolu en 8m
 - **API** - 01/02/2026 - Résolu en 3m
-- **API** - 01/02/2026 - Résolu en 2m
 
 ---
 

@@ -1,12 +1,12 @@
-# 🟢 Scribelia Status
+# 🔴 Scribelia Status
 
 [![Status](https://status.scribelia.com/badge.svg)](https://status.scribelia.com)
 
 > État des services Scribelia en temps réel
 
-**Statut actuel:** 🟢 Tous les systèmes opérationnels
+**Statut actuel:** 🔴 Panne détectée
 
-*Dernière mise à jour: 01/02/2026 11:56:15*
+*Dernière mise à jour: 01/02/2026 12:16:10*
 
 ---
 
@@ -14,8 +14,8 @@
 
 | Service | État | Temps de réponse | Uptime (24h) | Uptime (7j) | Uptime (30j) |
 |---------|------|------------------|--------------|-------------|--------------|
-| **API** | ✅ Opérationnel | 709ms | 67.39% | 64.17% | 73.41% |
-| **Website** | ✅ Opérationnel | 367ms | 100% | 99.51% | 99.79% |
+| **API** | ❌ Hors service | 10004ms | 65.93% | 63.95% | 73.4% |
+| **Website** | ✅ Opérationnel | 161ms | 100% | 99.51% | 99.79% |
 
 ---
 
@@ -23,22 +23,23 @@
 
 ### 🚨 Incidents en cours
 
-- **API** - ❌ Hors service depuis 16h 34m
-- **API** - ⚠️ Dégradé depuis 22h 36m
+- **API** - ❌ Hors service depuis 0s
+- **API** - ❌ Hors service depuis 16h 54m
+- **API** - ⚠️ Dégradé depuis 22h 56m
 - **API** - ⚠️ Dégradé depuis 1j 0h
 - **API** - ❌ Hors service depuis 1j 3h
-- **API** - ❌ Hors service depuis 1j 15h
+- **API** - ❌ Hors service depuis 1j 16h
 - **API** - ⚠️ Dégradé depuis 1j 16h
 - **API** - ❌ Hors service depuis 1j 16h
 - **API** - ❌ Hors service depuis 1j 18h
 - **API** - ❌ Hors service depuis 2j 17h
 - **API** - ❌ Hors service depuis 2j 18h
 - **API** - ⚠️ Dégradé depuis 3j 16h
-- **API** - ⚠️ Dégradé depuis 3j 21h
-- **API** - ⚠️ Dégradé depuis 6j 17h
-- **API** - ❌ Hors service depuis 10j 19h
-- **API** - ⚠️ Dégradé depuis 10j 19h
-- **API** - ❌ Hors service depuis 19j 20h
+- **API** - ⚠️ Dégradé depuis 3j 22h
+- **API** - ⚠️ Dégradé depuis 6j 18h
+- **API** - ❌ Hors service depuis 10j 20h
+- **API** - ⚠️ Dégradé depuis 10j 20h
+- **API** - ❌ Hors service depuis 19j 21h
 - **API** - ⚠️ Dégradé depuis 19j 22h
 
 ### ✅ Incidents résolus récemment
@@ -57,13 +58,13 @@
 - **URL:** `https://api.scribelia.com/health`
 - **Description:** API Backend
 - **Temps de réponse moyen (24h):** 638ms
-- **Temps de réponse moyen (7j):** 661ms
+- **Temps de réponse moyen (7j):** 662ms
 
 ### Website
 - **URL:** `https://scribelia.com`
 - **Description:** Frontend Application
-- **Temps de réponse moyen (24h):** 250ms
-- **Temps de réponse moyen (7j):** 320ms
+- **Temps de réponse moyen (24h):** 249ms
+- **Temps de réponse moyen (7j):** 318ms
 
 ---
 

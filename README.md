@@ -1,12 +1,12 @@
-# 🟡 Scribelia Status
+# 🟢 Scribelia Status
 
 [![Status](https://status.scribelia.com/badge.svg)](https://status.scribelia.com)
 
 > État des services Scribelia en temps réel
 
-**Statut actuel:** 🟡 Performance dégradée
+**Statut actuel:** 🟢 Tous les systèmes opérationnels
 
-*Dernière mise à jour: 01/02/2026 08:52:05*
+*Dernière mise à jour: 01/02/2026 08:54:09*
 
 ---
 
@@ -14,8 +14,8 @@
 
 | Service | État | Temps de réponse | Uptime (24h) | Uptime (7j) | Uptime (30j) |
 |---------|------|------------------|--------------|-------------|--------------|
-| **API** | ⚠️ Dégradé | 9049ms | 66.67% | 64.35% | 73.49% |
-| **Website** | ✅ Opérationnel | 190ms | 100% | 99.52% | 99.79% |
+| **API** | ✅ Opérationnel | 833ms | 67.02% | 64.35% | 73.49% |
+| **Website** | ✅ Opérationnel | 288ms | 100% | 99.52% | 99.79% |
 
 ---
 
@@ -23,10 +23,9 @@
 
 ### 🚨 Incidents en cours
 
-- **API** - ⚠️ Dégradé depuis 1s
-- **API** - ❌ Hors service depuis 13h 30m
-- **API** - ⚠️ Dégradé depuis 19h 32m
-- **API** - ⚠️ Dégradé depuis 21h 28m
+- **API** - ❌ Hors service depuis 13h 32m
+- **API** - ⚠️ Dégradé depuis 19h 34m
+- **API** - ⚠️ Dégradé depuis 21h 30m
 - **API** - ❌ Hors service depuis 1j 0h
 - **API** - ❌ Hors service depuis 1j 12h
 - **API** - ⚠️ Dégradé depuis 1j 13h
@@ -44,11 +43,11 @@
 
 ### ✅ Incidents résolus récemment
 
+- **API** - 01/02/2026 - Résolu en 2m
 - **API** - 01/02/2026 - Résolu en 1m
 - **API** - 01/02/2026 - Résolu en 51s
 - **API** - 01/02/2026 - Résolu en 1h 8m
 - **API** - 01/02/2026 - Résolu en 2m
-- **API** - 31/01/2026 - Résolu en 11m
 
 ---
 
@@ -57,13 +56,13 @@
 ### API
 - **URL:** `https://api.scribelia.com/health`
 - **Description:** API Backend
-- **Temps de réponse moyen (24h):** 621ms
+- **Temps de réponse moyen (24h):** 625ms
 - **Temps de réponse moyen (7j):** 657ms
 
 ### Website
 - **URL:** `https://scribelia.com`
 - **Description:** Frontend Application
-- **Temps de réponse moyen (24h):** 247ms
+- **Temps de réponse moyen (24h):** 248ms
 - **Temps de réponse moyen (7j):** 321ms
 
 ---

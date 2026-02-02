@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-02-02T18:25:23.868Z",
+  "lastUpdate": "2026-02-02T23:07:46.657Z",
   "overallStatus": "degraded",
   "sites": {
     "api": {
@@ -25243,31 +25243,37 @@
           "statusCode": 200,
           "responseTime": 9272,
           "timestamp": "2026-02-02T18:25:23.157Z"
+        },
+        {
+          "status": "degraded",
+          "statusCode": 200,
+          "responseTime": 9002,
+          "timestamp": "2026-02-02T23:07:46.337Z"
         }
       ],
-      "lastCheck": "2026-02-02T18:25:23.157Z",
-      "responseTime": 9272,
+      "lastCheck": "2026-02-02T23:07:46.337Z",
+      "responseTime": 9002,
       "statusCode": 200,
       "uptime": {
-        "day": 55.88,
-        "week": 61.51,
-        "month": 72.63,
-        "all": 74.47
+        "day": 45.45,
+        "week": 60.66,
+        "month": 72.43,
+        "all": 74.45
       },
       "avgResponseTime": {
-        "day": 675,
-        "week": 667,
+        "day": 677,
+        "week": 665,
         "month": 636
       },
       "healthCheck": {
         "version": "1.0.0",
         "environment": "production",
-        "uptime": 7.945569242,
-        "deployedAt": "2026-02-02T18:25:18.816Z",
+        "uptime": 7.250343933,
+        "deployedAt": "2026-02-02T23:07:42.384Z",
         "checks": {
           "database": {
             "status": "up",
-            "latency": 415
+            "latency": 456
           },
           "redis": {
             "status": "up",
@@ -50517,10 +50523,16 @@
           "statusCode": 200,
           "responseTime": 378,
           "timestamp": "2026-02-02T18:25:23.853Z"
+        },
+        {
+          "status": "up",
+          "statusCode": 200,
+          "responseTime": 283,
+          "timestamp": "2026-02-02T23:07:46.642Z"
         }
       ],
-      "lastCheck": "2026-02-02T18:25:23.853Z",
-      "responseTime": 378,
+      "lastCheck": "2026-02-02T23:07:46.642Z",
+      "responseTime": 283,
       "statusCode": 200,
       "uptime": {
         "day": 100,
@@ -50529,9 +50541,9 @@
         "all": 99.79
       },
       "avgResponseTime": {
-        "day": 321,
+        "day": 333,
         "week": 303,
-        "month": 397
+        "month": 395
       }
     }
   },

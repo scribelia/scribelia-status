@@ -1,12 +1,12 @@
-# 🔴 Scribelia Status
+# 🟢 Scribelia Status
 
 [![Status](https://status.scribelia.com/badge.svg)](https://status.scribelia.com)
 
 > État des services Scribelia en temps réel
 
-**Statut actuel:** 🔴 Panne détectée
+**Statut actuel:** 🟢 Tous les systèmes opérationnels
 
-*Dernière mise à jour: 02/02/2026 12:40:44*
+*Dernière mise à jour: 02/02/2026 12:49:40*
 
 ---
 
@@ -14,8 +14,8 @@
 
 | Service | État | Temps de réponse | Uptime (24h) | Uptime (7j) | Uptime (30j) |
 |---------|------|------------------|--------------|-------------|--------------|
-| **API** | ❌ Hors service | 10004ms | 60.76% | 61.46% | 72.86% |
-| **Website** | ✅ Opérationnel | 234ms | 100% | 100% | 99.78% |
+| **API** | ✅ Opérationnel | 585ms | 60.76% | 61.46% | 72.86% |
+| **Website** | ✅ Opérationnel | 284ms | 100% | 100% | 99.78% |
 
 ---
 
@@ -23,15 +23,14 @@
 
 ### 🚨 Incidents en cours
 
-- **API** - ❌ Hors service depuis 0s
-- **API** - ❌ Hors service depuis 2h 8m
-- **API** - ⚠️ Dégradé depuis 5h 25m
+- **API** - ❌ Hors service depuis 2h 17m
+- **API** - ⚠️ Dégradé depuis 5h 34m
 - **API** - ❌ Hors service depuis 1j 17h
 - **API** - ⚠️ Dégradé depuis 1j 23h
 - **API** - ⚠️ Dégradé depuis 2j 1h
 - **API** - ❌ Hors service depuis 2j 4h
 - **API** - ❌ Hors service depuis 2j 16h
-- **API** - ⚠️ Dégradé depuis 2j 16h
+- **API** - ⚠️ Dégradé depuis 2j 17h
 - **API** - ❌ Hors service depuis 2j 17h
 - **API** - ❌ Hors service depuis 2j 19h
 - **API** - ❌ Hors service depuis 3j 18h
@@ -46,11 +45,11 @@
 
 ### ✅ Incidents résolus récemment
 
+- **API** - 02/02/2026 - Résolu en 8m
 - **API** - 02/02/2026 - Résolu en 11m
 - **API** - 02/02/2026 - Résolu en 18m
 - **API** - 02/02/2026 - Résolu en 6m
 - **API** - 02/02/2026 - Résolu en 9m
-- **API** - 02/02/2026 - Résolu en 12m
 
 ---
 
@@ -59,8 +58,8 @@
 ### API
 - **URL:** `https://api.scribelia.com/health`
 - **Description:** API Backend
-- **Temps de réponse moyen (24h):** 675ms
-- **Temps de réponse moyen (7j):** 669ms
+- **Temps de réponse moyen (24h):** 668ms
+- **Temps de réponse moyen (7j):** 668ms
 
 ### Website
 - **URL:** `https://scribelia.com`

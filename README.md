@@ -1,12 +1,12 @@
-# 🟢 Scribelia Status
+# 🔴 Scribelia Status
 
 [![Status](https://status.scribelia.com/badge.svg)](https://status.scribelia.com)
 
 > État des services Scribelia en temps réel
 
-**Statut actuel:** 🟢 Tous les systèmes opérationnels
+**Statut actuel:** 🔴 Panne détectée
 
-*Dernière mise à jour: 02/02/2026 10:00:40*
+*Dernière mise à jour: 02/02/2026 10:32:35*
 
 ---
 
@@ -14,8 +14,8 @@
 
 | Service | État | Temps de réponse | Uptime (24h) | Uptime (7j) | Uptime (30j) |
 |---------|------|------------------|--------------|-------------|--------------|
-| **API** | ✅ Opérationnel | 611ms | 64.29% | 61.96% | 73.03% |
-| **Website** | ✅ Opérationnel | 504ms | 100% | 99.83% | 99.78% |
+| **API** | ❌ Hors service | 10004ms | 64.29% | 61.96% | 73.01% |
+| **Website** | ✅ Opérationnel | 236ms | 100% | 99.83% | 99.78% |
 
 ---
 
@@ -23,24 +23,25 @@
 
 ### 🚨 Incidents en cours
 
-- **API** - ⚠️ Dégradé depuis 2h 45m
-- **API** - ❌ Hors service depuis 1j 14h
-- **API** - ⚠️ Dégradé depuis 1j 20h
-- **API** - ⚠️ Dégradé depuis 1j 22h
-- **API** - ❌ Hors service depuis 2j 1h
-- **API** - ❌ Hors service depuis 2j 13h
-- **API** - ⚠️ Dégradé depuis 2j 14h
+- **API** - ❌ Hors service depuis 1s
+- **API** - ⚠️ Dégradé depuis 3h 17m
+- **API** - ❌ Hors service depuis 1j 15h
+- **API** - ⚠️ Dégradé depuis 1j 21h
+- **API** - ⚠️ Dégradé depuis 1j 23h
+- **API** - ❌ Hors service depuis 2j 2h
 - **API** - ❌ Hors service depuis 2j 14h
-- **API** - ❌ Hors service depuis 2j 16h
-- **API** - ❌ Hors service depuis 3j 15h
+- **API** - ⚠️ Dégradé depuis 2j 14h
+- **API** - ❌ Hors service depuis 2j 15h
+- **API** - ❌ Hors service depuis 2j 17h
 - **API** - ❌ Hors service depuis 3j 16h
-- **API** - ⚠️ Dégradé depuis 4j 14h
-- **API** - ⚠️ Dégradé depuis 4j 19h
-- **API** - ⚠️ Dégradé depuis 7j 15h
+- **API** - ❌ Hors service depuis 3j 17h
+- **API** - ⚠️ Dégradé depuis 4j 15h
+- **API** - ⚠️ Dégradé depuis 4j 20h
+- **API** - ⚠️ Dégradé depuis 7j 16h
 - **API** - ❌ Hors service depuis 11j 18h
 - **API** - ⚠️ Dégradé depuis 11j 18h
-- **API** - ❌ Hors service depuis 20j 18h
-- **API** - ⚠️ Dégradé depuis 20j 20h
+- **API** - ❌ Hors service depuis 20j 19h
+- **API** - ⚠️ Dégradé depuis 20j 21h
 
 ### ✅ Incidents résolus récemment
 

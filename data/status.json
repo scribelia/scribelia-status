@@ -1,12 +1,12 @@
 {
-  "lastUpdate": "2026-02-04T13:19:45.193Z",
-  "overallStatus": "operational",
+  "lastUpdate": "2026-02-04T13:42:03.637Z",
+  "overallStatus": "outage",
   "sites": {
     "api": {
       "name": "API",
       "url": "https://api.scribelia.com/health",
       "description": "API Backend",
-      "status": "up",
+      "status": "down",
       "history": [
         {
           "status": "up",
@@ -25783,16 +25783,22 @@
           "statusCode": 200,
           "responseTime": 527,
           "timestamp": "2026-02-04T13:19:44.878Z"
+        },
+        {
+          "status": "down",
+          "statusCode": 0,
+          "responseTime": 10004,
+          "timestamp": "2026-02-04T13:42:03.076Z"
         }
       ],
-      "lastCheck": "2026-02-04T13:19:44.878Z",
-      "responseTime": 527,
-      "statusCode": 200,
+      "lastCheck": "2026-02-04T13:42:03.076Z",
+      "responseTime": 10004,
+      "statusCode": 0,
       "uptime": {
         "day": 59.32,
         "week": 59.67,
         "month": 71.55,
-        "all": 74.14
+        "all": 74.12
       },
       "avgResponseTime": {
         "day": 663,
@@ -51597,10 +51603,16 @@
           "statusCode": 200,
           "responseTime": 279,
           "timestamp": "2026-02-04T13:19:45.178Z"
+        },
+        {
+          "status": "up",
+          "statusCode": 200,
+          "responseTime": 249,
+          "timestamp": "2026-02-04T13:42:03.618Z"
         }
       ],
-      "lastCheck": "2026-02-04T13:19:45.178Z",
-      "responseTime": 279,
+      "lastCheck": "2026-02-04T13:42:03.618Z",
+      "responseTime": 249,
       "statusCode": 200,
       "uptime": {
         "day": 100,
@@ -51616,6 +51628,21 @@
     }
   },
   "incidents": [
+    {
+      "id": 1770212523369,
+      "site": "API",
+      "slug": "api",
+      "status": "down",
+      "startedAt": "2026-02-04T13:42:03.076Z",
+      "resolvedAt": null,
+      "updates": [
+        {
+          "status": "down",
+          "message": "API is down",
+          "timestamp": "2026-02-04T13:42:03.076Z"
+        }
+      ]
+    },
     {
       "id": 1770203068025,
       "site": "API",
